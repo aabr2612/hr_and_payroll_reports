@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" RollPaper="true" Margins="99, 99, 100, 100" PaperKind="Custom" PageWidth="1654" PageHeight="3691" Version="22.2" Font="Arial, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" RollPaper="true" Margins="99, 99, 100, 100" PaperKind="Custom" PageWidth="1654" PageHeight="3623" Version="22.2" Font="Arial, 9.75pt">
   <Parameters>
     <Item1 Ref="2" ValueInfo="2025-07-23" Name="SDate" Type="#Ref-1">
       <ExpressionBindings>
@@ -68,7 +68,7 @@
           <ColumnDefinitions>
             <Item1 Ref="39" AutoWidthMode="ShrinkAndGrow" />
             <Item2 Ref="40" AutoWidthMode="ShrinkAndGrow" />
-            <Item3 Ref="41" Width="35" />
+            <Item3 Ref="41" Width="35" AutoWidthMode="ShrinkAndGrow" />
             <Item4 Ref="42" Width="40" Visible="false" />
             <Item5 Ref="43" Visible="false" />
           </ColumnDefinitions>
@@ -110,7 +110,7 @@
         <Item1 Ref="71" ControlType="XRLabel" Name="label11" Multiline="true" Text="Attendance Report Summary" TextAlignment="MiddleLeft" SizeF="290.4475,28.2083511" LocationFloat="0,10.0000067" Font="Calibri, 14pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="72" UseFont="false" UseTextAlignment="false" />
         </Item1>
-        <Item2 Ref="73" ControlType="XRCrossTab" Name="crossTab2" GeneralStyleName="crossTabGeneralStyle" DataAreaStyleName="crossTabDataStyle" HeaderAreaStyleName="crossTabHeaderStyle" TotalAreaStyleName="crossTabTotalStyle" DataSource="#Ref-30" DataMember="EmpAttendanceReportSummary" SizeF="708.912231,225" LocationFloat="0,38.20836">
+        <Item2 Ref="73" ControlType="XRCrossTab" Name="crossTab2" GeneralStyleName="crossTabGeneralStyle" DataAreaStyleName="crossTabDataStyle" HeaderAreaStyleName="crossTabHeaderStyle" TotalAreaStyleName="crossTabTotalStyle" DataSource="#Ref-30" DataMember="EmpAttendanceReportSummary" SizeF="602.6622,225" LocationFloat="0,38.20836">
           <PrintOptions Ref="74" PrintTotalsForSingleValues="false" />
           <RowFields>
             <Item1 Ref="75" FieldName="CCDescription">
@@ -124,17 +124,17 @@
             <Item7 Ref="82" FieldName="Holidays" />
           </RowFields>
           <ColumnDefinitions>
-            <Item1 Ref="83" />
-            <Item2 Ref="84" />
-            <Item3 Ref="85" />
-            <Item4 Ref="86" />
-            <Item5 Ref="87" />
-            <Item6 Ref="88" />
-            <Item7 Ref="89" Width="75.11186" AutoWidthMode="ShrinkOnly" />
+            <Item1 Ref="83" Width="115.625" AutoWidthMode="ShrinkAndGrow" />
+            <Item2 Ref="84" Width="174.999985" AutoWidthMode="ShrinkAndGrow" />
+            <Item3 Ref="85" Width="53.12502" AutoWidthMode="ShrinkAndGrow" />
+            <Item4 Ref="86" Width="42.7083435" AutoWidthMode="ShrinkAndGrow" />
+            <Item5 Ref="87" Width="77.08334" AutoWidthMode="ShrinkAndGrow" />
+            <Item6 Ref="88" Width="48.958313" AutoWidthMode="ShrinkAndGrow" />
+            <Item7 Ref="89" Width="56.3618164" AutoWidthMode="ShrinkAndGrow" />
             <Item8 Ref="90" Width="33.80034" AutoWidthMode="ShrinkOnly" />
           </ColumnDefinitions>
           <RowDefinitions>
-            <Item1 Ref="91" />
+            <Item1 Ref="91" AutoHeightMode="ShrinkAndGrow" />
             <Item2 Ref="92" AutoHeightMode="ShrinkAndGrow" />
             <Item3 Ref="93" Visible="false" />
             <Item4 Ref="94" Visible="false" />
@@ -156,23 +156,23 @@
             <Item9 Ref="108" ControlType="XRCrossTabCell" Name="crossTabCell21" TextFormatString="Total {0}" ColumnIndex="0" RowIndex="7" ColumnSpan="7" />
             <Item10 Ref="109" ControlType="XRCrossTabCell" Name="crossTabCell22" ColumnIndex="7" RowIndex="7" />
             <Item11 Ref="110" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="2" RowIndex="0" Text="Presents" Font="Calibri, 7pt, style=Bold" />
-            <Item12 Ref="111" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="2" RowIndex="1" RowSpan="4" Font="Calibri, 7pt, style=Bold" />
+            <Item12 Ref="111" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="2" RowIndex="1" RowSpan="4" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
             <Item13 Ref="112" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" TextFormatString="Total {0}" ColumnIndex="1" RowIndex="6" ColumnSpan="6" />
             <Item14 Ref="113" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="7" RowIndex="6" />
             <Item15 Ref="114" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="3" RowIndex="0" Text="Absents" Font="Calibri, 7pt, style=Bold" />
-            <Item16 Ref="115" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="3" RowIndex="1" RowSpan="3" Font="Calibri, 7pt, style=Bold" />
+            <Item16 Ref="115" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="3" RowIndex="1" RowSpan="3" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
             <Item17 Ref="116" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" TextFormatString="Total {0}" ColumnIndex="2" RowIndex="5" ColumnSpan="5" />
             <Item18 Ref="117" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="7" RowIndex="5" />
-            <Item19 Ref="118" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="4" RowIndex="0" Text="Gazetted Leaves" Font="Calibri, 7pt, style=Bold" />
-            <Item20 Ref="119" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="4" RowIndex="1" RowSpan="2" Font="Calibri, 7pt, style=Bold" />
+            <Item19 Ref="118" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="4" RowIndex="0" Text="Public Holidays" Font="Calibri, 7pt, style=Bold" />
+            <Item20 Ref="119" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="4" RowIndex="1" RowSpan="2" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
             <Item21 Ref="120" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" TextFormatString="Total {0}" ColumnIndex="3" RowIndex="4" ColumnSpan="4" />
             <Item22 Ref="121" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="7" RowIndex="4" />
             <Item23 Ref="122" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="5" RowIndex="0" Text="Leaves" Font="Calibri, 7pt, style=Bold" />
-            <Item24 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="5" RowIndex="1" Font="Calibri, 7pt, style=Bold" />
+            <Item24 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="5" RowIndex="1" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
             <Item25 Ref="124" ControlType="XRCrossTabCell" Name="crossTabHeaderCell15" TextFormatString="Total {0}" ColumnIndex="4" RowIndex="3" ColumnSpan="3" />
             <Item26 Ref="125" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="7" RowIndex="3" />
             <Item27 Ref="126" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="6" RowIndex="0" Text="Holidays" Font="Calibri, 7pt, style=Bold" />
-            <Item28 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="6" RowIndex="1" Font="Calibri, 7pt, style=Bold" />
+            <Item28 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="6" RowIndex="1" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
             <Item29 Ref="128" ControlType="XRCrossTabCell" Name="crossTabHeaderCell18" TextFormatString="Total {0}" ColumnIndex="5" RowIndex="2" ColumnSpan="2" />
             <Item30 Ref="129" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="7" RowIndex="2" />
           </Cells>
@@ -193,7 +193,7 @@
     <Item3 Ref="137" LayoutItemType="Parameter" Parameter="#Ref-7" />
   </ParameterPanelLayoutItems>
   <ComponentStorage>
-    <Item1 Ref="30" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9DTE9VREVSUF9Db25uZWN0aW9uIiBQcm92aWRlcktleT0iTVNTcWxTZXJ2ZXIiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0iREVTS1RPUC0yTU1VS1FNXFNRTEVYUFJFU1MiIC8+PFBhcmFtZXRlciBOYW1lPSJkYXRhYmFzZSIgVmFsdWU9IkNMT1VERVJQIiAvPjxQYXJhbWV0ZXIgTmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiBWYWx1ZT0iVHJ1ZSIgLz48UGFyYW1ldGVyIE5hbWU9InJlYWQgb25seSIgVmFsdWU9IjEiIC8+PFBhcmFtZXRlciBOYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIFZhbHVlPSJmYWxzZSIgLz48UGFyYW1ldGVyIE5hbWU9InVzZXJpZCIgVmFsdWU9IiIgLz48UGFyYW1ldGVyIE5hbWU9InBhc3N3b3JkIiBWYWx1ZT0iIiAvPjwvUGFyYW1ldGVycz48L0Nvbm5lY3Rpb24+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wQXR0ZW5kYW5jZVJlcG9ydCI+PFBhcmFtZXRlciBOYW1lPSJAU0RhdGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkRhdGVUaW1lKSg/U0RhdGUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJARURhdGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkRhdGVUaW1lKSg/RURhdGUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJAQXR0ZW5kIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9BdHRlbmQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPkVtcEF0dGVuZGFuY2VSZXBvcnQ8L1Byb2NOYW1lPjwvUXVlcnk+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wQXR0ZW5kYW5jZVJlcG9ydFN1bW1hcnkiPjxQYXJhbWV0ZXIgTmFtZT0iQFNEYXRlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5EYXRlVGltZSkoP1NEYXRlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEVEYXRlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5EYXRlVGltZSkoP0VEYXRlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEF0dGVuZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nKSg/QXR0ZW5kKTwvUGFyYW1ldGVyPjxQcm9jTmFtZT5FbXBBdHRlbmRhbmNlUmVwb3J0U3VtbWFyeTwvUHJvY05hbWU+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJFbXBBdHRlbmRhbmNlUmVwb3J0Ij48RmllbGQgTmFtZT0iRW1wbG95ZWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXR0ZW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkF0dGVuZGFuY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0NEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik9mZmljZUluIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik9mZmljZU91dCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48VmlldyBOYW1lPSJFbXBBdHRlbmRhbmNlUmVwb3J0U3VtbWFyeSI+PEZpZWxkIE5hbWU9IkVtcGxveWVlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNDRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0NDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCckNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJlc2VudHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBYnNlbnRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGVhdmVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG9saWRheXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJHYXpldHRlZExlYXZlcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+    <Item1 Ref="30" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9DTE9VREVSUF9Db25uZWN0aW9uIiBQcm92aWRlcktleT0iTVNTcWxTZXJ2ZXIiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0iREVTS1RPUC0yTU1VS1FNXFNRTEVYUFJFU1MiIC8+PFBhcmFtZXRlciBOYW1lPSJkYXRhYmFzZSIgVmFsdWU9IkNMT1VERVJQIiAvPjxQYXJhbWV0ZXIgTmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiBWYWx1ZT0iVHJ1ZSIgLz48UGFyYW1ldGVyIE5hbWU9InJlYWQgb25seSIgVmFsdWU9IjEiIC8+PFBhcmFtZXRlciBOYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIFZhbHVlPSJmYWxzZSIgLz48UGFyYW1ldGVyIE5hbWU9InVzZXJpZCIgVmFsdWU9IiIgLz48UGFyYW1ldGVyIE5hbWU9InBhc3N3b3JkIiBWYWx1ZT0iIiAvPjwvUGFyYW1ldGVycz48L0Nvbm5lY3Rpb24+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wQXR0ZW5kYW5jZVJlcG9ydCI+PFBhcmFtZXRlciBOYW1lPSJAU0RhdGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkRhdGVUaW1lKSg/U0RhdGUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJARURhdGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkRhdGVUaW1lKSg/RURhdGUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJAQXR0ZW5kIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9BdHRlbmQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPkVtcEF0dGVuZGFuY2VSZXBvcnQ8L1Byb2NOYW1lPjwvUXVlcnk+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wQXR0ZW5kYW5jZVJlcG9ydFN1bW1hcnkiPjxQYXJhbWV0ZXIgTmFtZT0iQFNEYXRlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5EYXRlVGltZSkoP1NEYXRlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEVEYXRlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5EYXRlVGltZSkoP0VEYXRlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEF0dGVuZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nKSg/QXR0ZW5kKTwvUGFyYW1ldGVyPjxQcm9jTmFtZT5FbXBBdHRlbmRhbmNlU3VtbWFyeTwvUHJvY05hbWU+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJFbXBBdHRlbmRhbmNlUmVwb3J0Ij48RmllbGQgTmFtZT0iRW1wbG95ZWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXR0ZW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkF0dGVuZGFuY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0NEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik9mZmljZUluIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik9mZmljZU91dCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48VmlldyBOYW1lPSJFbXBBdHRlbmRhbmNlUmVwb3J0U3VtbWFyeSI+PEZpZWxkIE5hbWU9IkVtcGxveWVlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNDRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0NDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCckNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJlc2VudHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBYnNlbnRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGVhdmVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG9saWRheXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJHYXpldHRlZExlYXZlcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
   </ComponentStorage>
   <ObjectStorage>
     <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v22.2" Ref="1" Content="System.DateTime" Type="System.Type" />

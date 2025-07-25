@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" RollPaper="true" Margins="99, 99, 100, 100" PaperKind="Custom" PageWidth="1654" PageHeight="3691" Version="22.2" Font="Arial, 9.75pt">
+  <Parameters>
+    <Item1 Ref="2" ValueInfo="2025-07-23" Name="SDate" Type="#Ref-1">
+      <ExpressionBindings>
+        <Item1 Ref="3" PropertyName="Value" Expression="Today()" />
+      </ExpressionBindings>
+    </Item1>
+    <Item2 Ref="4" ValueInfo="2025-07-23" Name="EDate" Type="#Ref-1">
+      <ExpressionBindings>
+        <Item1 Ref="5" PropertyName="Value" Expression="Today()" />
+      </ExpressionBindings>
+    </Item2>
+    <Item3 Ref="7" Description="Select Attendance" AllowNull="true" Name="Attend" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="8" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="173.500046">
+      <Controls>
+        <Item1 Ref="9" ControlType="XRLabel" Name="label10" Multiline="true" Text="Public Holiday &gt; G" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="200,150.500046" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="10" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="11" ControlType="XRLabel" Name="label6" Multiline="true" Text="Employee Holiday &gt; H" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="33.927536,150.500046" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="12" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+        <Item3 Ref="13" ControlType="XRLabel" Name="label9" Multiline="true" Text="Leave &gt; L" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="33.927536,127.500023" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="14" UseFont="false" UseTextAlignment="false" />
+        </Item3>
+        <Item4 Ref="15" ControlType="XRLabel" Name="label8" Multiline="true" Text="Manully Present &gt; P" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="200,127.500023" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="16" UseFont="false" UseTextAlignment="false" />
+        </Item4>
+        <Item5 Ref="17" ControlType="XRLabel" Name="label7" Multiline="true" Text="Absent &gt; A" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="200,104.500008" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="18" UseFont="false" UseTextAlignment="false" />
+        </Item5>
+        <Item6 Ref="19" ControlType="XRLabel" Name="label5" Multiline="true" Text="Present &gt; P" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="33.927536,104.500008" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="20" UseFont="false" UseTextAlignment="false" />
+        </Item6>
+        <Item7 Ref="21" ControlType="XRLabel" Name="label4" Multiline="true" Text="Attendance Type Key:" TextAlignment="MiddleLeft" SizeF="166.072464,23" LocationFloat="0,81.50003" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="22" UseFont="false" UseTextAlignment="false" />
+        </Item7>
+        <Item8 Ref="23" ControlType="XRLabel" Name="label3" Multiline="true" Text="From Date: [?SDate!dd-MMM-yy] To Date: [?EDate!dd-MMM-yy]" SizeF="1454.00024,22.9999962" LocationFloat="0,58.5000343" Font="Calibri, 12pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="24" UseFont="false" />
+        </Item8>
+        <Item9 Ref="25" ControlType="XRLabel" Name="label2" Multiline="true" Text="Employee Attendance Report - Department Wise" SizeF="1454.00012,23" LocationFloat="0,35.50002" Font="Calibri, 13pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="26" UseFont="false" />
+        </Item9>
+        <Item10 Ref="27" ControlType="XRLabel" Name="label1" Multiline="true" Text="Opus Vehicle Inspection Pvt. Ltd." TextAlignment="MiddleLeft" SizeF="1454,35.50002" LocationFloat="0,0" Font="Calibri, 16pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="28" UseFont="false" UseTextAlignment="false" />
+        </Item10>
+      </Controls>
+    </Item1>
+    <Item2 Ref="29" ControlType="DetailBand" Name="Detail" HeightF="125">
+      <Controls>
+        <Item1 Ref="31" ControlType="XRCrossTab" Name="crossTab1" GeneralStyleName="crossTabGeneralStyle" DataAreaStyleName="crossTabDataStyle" HeaderAreaStyleName="crossTabHeaderStyle" TotalAreaStyleName="crossTabTotalStyle" DataSource="#Ref-30" DataMember="EmpAttendanceReport" SizeF="375,125" LocationFloat="0,0">
+          <PrintOptions Ref="32" PrintTotalsForSingleValues="false" />
+          <RowFields>
+            <Item1 Ref="33" FieldName="CCDescription">
+              <SortBySummaryInfo Ref="34" FieldName="CCDescription" SummaryType="Max" />
+            </Item1>
+            <Item2 Ref="35" SortOrder="None" FieldName="Employee" />
+          </RowFields>
+          <ColumnFields>
+            <Item1 Ref="36" SortOrder="None" FieldName="AttendDate" />
+            <Item2 Ref="37" FieldName="AttendDate" />
+          </ColumnFields>
+          <DataFields>
+            <Item1 Ref="38" SummaryType="Max" FieldName="Attendance" />
+          </DataFields>
+          <ColumnDefinitions>
+            <Item1 Ref="39" AutoWidthMode="ShrinkAndGrow" />
+            <Item2 Ref="40" AutoWidthMode="ShrinkAndGrow" />
+            <Item3 Ref="41" Width="35" />
+            <Item4 Ref="42" Width="40" Visible="false" />
+            <Item5 Ref="43" Visible="false" />
+          </ColumnDefinitions>
+          <RowDefinitions>
+            <Item1 Ref="44" AutoHeightMode="GrowOnly" />
+            <Item2 Ref="45" />
+            <Item3 Ref="46" AutoHeightMode="ShrinkAndGrow" />
+            <Item4 Ref="47" Visible="false" />
+            <Item5 Ref="48" Visible="false" />
+          </RowDefinitions>
+          <Cells>
+            <Item1 Ref="49" ControlType="XRCrossTabCell" Name="crossTabCell2" ColumnIndex="2" RowIndex="2" TextAlignment="TopCenter" Font="Calibri, 6pt" Padding="6,6,0,0,100" />
+            <Item2 Ref="50" ControlType="XRCrossTabCell" Name="crossTabCell3" TextFormatString="{0:dd-MMM}" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" Font="Calibri, 6pt, style=Bold" Padding="2,2,0,0,100" />
+            <Item3 Ref="51" ControlType="XRCrossTabCell" Name="crossTabCell4" ColumnIndex="4" RowIndex="0" RowSpan="2" Text="Grand Total" Font="Calibri, 7pt, style=Bold" />
+            <Item4 Ref="52" ControlType="XRCrossTabCell" Name="crossTabCell5" ColumnIndex="4" RowIndex="2" Font="Calibri, 9.75pt, style=Bold" />
+            <Item5 Ref="53" ControlType="XRCrossTabCell" Name="crossTabCell6" ColumnIndex="1" RowIndex="2" Font="Calibri, 6pt, style=Bold" />
+            <Item6 Ref="54" ControlType="XRCrossTabCell" Name="crossTabCell7" ColumnIndex="0" RowIndex="4" ColumnSpan="2" Text="Grand Total" Font="Calibri, 7pt, style=Bold" />
+            <Item7 Ref="55" ControlType="XRCrossTabCell" Name="crossTabCell8" ColumnIndex="2" RowIndex="4" Font="Calibri, 9.75pt, style=Bold" />
+            <Item8 Ref="56" ControlType="XRCrossTabCell" Name="crossTabCell9" ColumnIndex="4" RowIndex="4" Font="Calibri, 9.75pt, style=Bold" />
+            <Item9 Ref="57" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="0" RowIndex="2" Font="Calibri, 6pt, style=Bold" BorderColor="Black" BorderWidth="1" />
+            <Item10 Ref="58" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" TextFormatString="Total {0}" ColumnIndex="0" RowIndex="3" ColumnSpan="2" />
+            <Item11 Ref="59" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="2" RowIndex="3" />
+            <Item12 Ref="60" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="4" RowIndex="3" />
+            <Item13 Ref="61" ControlType="XRCrossTabCell" Name="crossTabHeaderCell19" TextFormatString="{0:ddd}" ColumnIndex="2" RowIndex="1" TextAlignment="MiddleCenter" Font="Calibri, 6pt, style=Bold" Padding="2,2,0,0,100" />
+            <Item14 Ref="62" ControlType="XRCrossTabCell" Name="crossTabHeaderCell20" TextFormatString="Total {0}" ColumnIndex="3" RowIndex="0" RowSpan="2" />
+            <Item15 Ref="63" ControlType="XRCrossTabCell" Name="crossTabTotalCell8" ColumnIndex="3" RowIndex="2" />
+            <Item16 Ref="64" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="3" RowIndex="3" />
+            <Item17 Ref="65" ControlType="XRCrossTabCell" Name="crossTabTotalCell10" ColumnIndex="3" RowIndex="4" />
+            <Item18 Ref="66" ControlType="XRCrossTabCell" Name="crossTabHeaderCell1" ColumnIndex="0" RowIndex="0" RowSpan="2" Text="Department" />
+            <Item19 Ref="67" ControlType="XRCrossTabCell" Name="crossTabHeaderCell21" ColumnIndex="1" RowIndex="0" RowSpan="2" Text="Employee" />
+          </Cells>
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="68" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item4 Ref="69" ControlType="BottomMarginBand" Name="BottomMargin" />
+    <Item5 Ref="70" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="413.208374">
+      <Controls>
+        <Item1 Ref="71" ControlType="XRLabel" Name="label11" Multiline="true" Text="Attendance Report Summary" TextAlignment="MiddleLeft" SizeF="290.4475,28.2083511" LocationFloat="0,10.0000067" Font="Calibri, 14pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="72" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="73" ControlType="XRCrossTab" Name="crossTab2" GeneralStyleName="crossTabGeneralStyle" DataAreaStyleName="crossTabDataStyle" HeaderAreaStyleName="crossTabHeaderStyle" TotalAreaStyleName="crossTabTotalStyle" DataSource="#Ref-30" DataMember="EmpAttendanceReportSummary" SizeF="708.912231,225" LocationFloat="0,38.20836">
+          <PrintOptions Ref="74" PrintTotalsForSingleValues="false" />
+          <RowFields>
+            <Item1 Ref="75" FieldName="CCDescription">
+              <SortBySummaryInfo Ref="76" FieldName="CCDescription" SummaryType="Max" />
+            </Item1>
+            <Item2 Ref="77" SortOrder="None" FieldName="Employee" />
+            <Item3 Ref="78" FieldName="Presents" />
+            <Item4 Ref="79" FieldName="Absents" />
+            <Item5 Ref="80" FieldName="GazettedLeaves" />
+            <Item6 Ref="81" FieldName="Leaves" />
+            <Item7 Ref="82" FieldName="Holidays" />
+          </RowFields>
+          <ColumnDefinitions>
+            <Item1 Ref="83" />
+            <Item2 Ref="84" />
+            <Item3 Ref="85" />
+            <Item4 Ref="86" />
+            <Item5 Ref="87" />
+            <Item6 Ref="88" />
+            <Item7 Ref="89" Width="75.11186" AutoWidthMode="ShrinkOnly" />
+            <Item8 Ref="90" Width="33.80034" AutoWidthMode="ShrinkOnly" />
+          </ColumnDefinitions>
+          <RowDefinitions>
+            <Item1 Ref="91" />
+            <Item2 Ref="92" AutoHeightMode="ShrinkAndGrow" />
+            <Item3 Ref="93" Visible="false" />
+            <Item4 Ref="94" Visible="false" />
+            <Item5 Ref="95" Visible="false" />
+            <Item6 Ref="96" Visible="false" />
+            <Item7 Ref="97" Visible="false" />
+            <Item8 Ref="98" Visible="false" />
+            <Item9 Ref="99" Visible="false" />
+          </RowDefinitions>
+          <Cells>
+            <Item1 Ref="100" ControlType="XRCrossTabCell" Name="crossTabCell10" ColumnIndex="1" RowIndex="0" Text="Employee" Font="Calibri, 6pt, style=Bold" />
+            <Item2 Ref="101" ControlType="XRCrossTabCell" Name="crossTabCell11" ColumnIndex="7" RowIndex="1" TextAlignment="TopCenter" Font="Calibri, 6pt" Padding="6,6,0,0,100" />
+            <Item3 Ref="102" ControlType="XRCrossTabCell" Name="crossTabCell12" ColumnIndex="7" RowIndex="0" Font="Calibri, 6pt, style=Bold" />
+            <Item4 Ref="103" ControlType="XRCrossTabCell" Name="crossTabCell15" ColumnIndex="1" RowIndex="1" RowSpan="5" Font="Calibri, 6pt, style=Bold" />
+            <Item5 Ref="104" ControlType="XRCrossTabCell" Name="crossTabCell16" ColumnIndex="0" RowIndex="8" ColumnSpan="7" Text="Grand Total" Font="Calibri, 7pt, style=Bold" />
+            <Item6 Ref="105" ControlType="XRCrossTabCell" Name="crossTabCell17" ColumnIndex="7" RowIndex="8" Font="Calibri, 9.75pt, style=Bold" />
+            <Item7 Ref="106" ControlType="XRCrossTabCell" Name="crossTabCell19" ColumnIndex="0" RowIndex="0" Font="Calibri, 7pt, style=Bold" />
+            <Item8 Ref="107" ControlType="XRCrossTabCell" Name="crossTabCell20" ColumnIndex="0" RowIndex="1" RowSpan="6" Font="Calibri, 6pt, style=Bold" />
+            <Item9 Ref="108" ControlType="XRCrossTabCell" Name="crossTabCell21" TextFormatString="Total {0}" ColumnIndex="0" RowIndex="7" ColumnSpan="7" />
+            <Item10 Ref="109" ControlType="XRCrossTabCell" Name="crossTabCell22" ColumnIndex="7" RowIndex="7" />
+            <Item11 Ref="110" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="2" RowIndex="0" Text="Presents" Font="Calibri, 7pt, style=Bold" />
+            <Item12 Ref="111" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="2" RowIndex="1" RowSpan="4" Font="Calibri, 7pt, style=Bold" />
+            <Item13 Ref="112" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" TextFormatString="Total {0}" ColumnIndex="1" RowIndex="6" ColumnSpan="6" />
+            <Item14 Ref="113" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="7" RowIndex="6" />
+            <Item15 Ref="114" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="3" RowIndex="0" Text="Absents" Font="Calibri, 7pt, style=Bold" />
+            <Item16 Ref="115" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="3" RowIndex="1" RowSpan="3" Font="Calibri, 7pt, style=Bold" />
+            <Item17 Ref="116" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" TextFormatString="Total {0}" ColumnIndex="2" RowIndex="5" ColumnSpan="5" />
+            <Item18 Ref="117" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="7" RowIndex="5" />
+            <Item19 Ref="118" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="4" RowIndex="0" Text="Gazetted Leaves" Font="Calibri, 7pt, style=Bold" />
+            <Item20 Ref="119" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="4" RowIndex="1" RowSpan="2" Font="Calibri, 7pt, style=Bold" />
+            <Item21 Ref="120" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" TextFormatString="Total {0}" ColumnIndex="3" RowIndex="4" ColumnSpan="4" />
+            <Item22 Ref="121" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="7" RowIndex="4" />
+            <Item23 Ref="122" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="5" RowIndex="0" Text="Leaves" Font="Calibri, 7pt, style=Bold" />
+            <Item24 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="5" RowIndex="1" Font="Calibri, 7pt, style=Bold" />
+            <Item25 Ref="124" ControlType="XRCrossTabCell" Name="crossTabHeaderCell15" TextFormatString="Total {0}" ColumnIndex="4" RowIndex="3" ColumnSpan="3" />
+            <Item26 Ref="125" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="7" RowIndex="3" />
+            <Item27 Ref="126" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="6" RowIndex="0" Text="Holidays" Font="Calibri, 7pt, style=Bold" />
+            <Item28 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="6" RowIndex="1" Font="Calibri, 7pt, style=Bold" />
+            <Item29 Ref="128" ControlType="XRCrossTabCell" Name="crossTabHeaderCell18" TextFormatString="Total {0}" ColumnIndex="5" RowIndex="2" ColumnSpan="2" />
+            <Item30 Ref="129" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="7" RowIndex="2" />
+          </Cells>
+        </Item2>
+      </Controls>
+    </Item5>
+  </Bands>
+  <StyleSheet>
+    <Item1 Ref="130" Name="TitleStyle" BorderStyle="Inset" Padding="2,2,0,0,100" Font="Arial, 18pt" StringFormat="Near;Near;0;None;Character;GenericDefault" />
+    <Item2 Ref="131" Name="crossTabGeneralStyle" BorderStyle="Inset" Padding="6,6,0,0,100" Font="Arial, 9.75pt" BorderColor="Black" Sides="All" StringFormat="Near;Near;0;None;Character;GenericDefault" BorderWidthSerializable="1" />
+    <Item3 Ref="132" Name="crossTabHeaderStyle" BorderStyle="Inset" Font="Arial, 9.75pt, style=Bold" BackColor="White" StringFormat="Near;Center;0;None;Character;GenericDefault" TextAlignment="MiddleLeft" />
+    <Item4 Ref="133" Name="crossTabDataStyle" BorderStyle="Inset" StringFormat="Far;Center;0;None;Character;GenericDefault" TextAlignment="MiddleRight" />
+    <Item5 Ref="134" Name="crossTabTotalStyle" BorderStyle="Inset" Font="Arial, 9.75pt, style=Bold" BackColor="255,250,251,252" StringFormat="Far;Center;0;None;Character;GenericDefault" TextAlignment="MiddleRight" />
+  </StyleSheet>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="135" LayoutItemType="Parameter" Parameter="#Ref-2" />
+    <Item2 Ref="136" LayoutItemType="Parameter" Parameter="#Ref-4" />
+    <Item3 Ref="137" LayoutItemType="Parameter" Parameter="#Ref-7" />
+  </ParameterPanelLayoutItems>
+  <ComponentStorage>
+    <Item1 Ref="30" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9DTE9VREVSUF9Db25uZWN0aW9uIiBQcm92aWRlcktleT0iTVNTcWxTZXJ2ZXIiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0iREVTS1RPUC0yTU1VS1FNXFNRTEVYUFJFU1MiIC8+PFBhcmFtZXRlciBOYW1lPSJkYXRhYmFzZSIgVmFsdWU9IkNMT1VERVJQIiAvPjxQYXJhbWV0ZXIgTmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiBWYWx1ZT0iVHJ1ZSIgLz48UGFyYW1ldGVyIE5hbWU9InJlYWQgb25seSIgVmFsdWU9IjEiIC8+PFBhcmFtZXRlciBOYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIFZhbHVlPSJmYWxzZSIgLz48UGFyYW1ldGVyIE5hbWU9InVzZXJpZCIgVmFsdWU9IiIgLz48UGFyYW1ldGVyIE5hbWU9InBhc3N3b3JkIiBWYWx1ZT0iIiAvPjwvUGFyYW1ldGVycz48L0Nvbm5lY3Rpb24+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wQXR0ZW5kYW5jZVJlcG9ydCI+PFBhcmFtZXRlciBOYW1lPSJAU0RhdGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkRhdGVUaW1lKSg/U0RhdGUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJARURhdGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLkRhdGVUaW1lKSg/RURhdGUpPC9QYXJhbWV0ZXI+PFBhcmFtZXRlciBOYW1lPSJAQXR0ZW5kIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9BdHRlbmQpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPkVtcEF0dGVuZGFuY2VSZXBvcnQ8L1Byb2NOYW1lPjwvUXVlcnk+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wQXR0ZW5kYW5jZVJlcG9ydFN1bW1hcnkiPjxQYXJhbWV0ZXIgTmFtZT0iQFNEYXRlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5EYXRlVGltZSkoP1NEYXRlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEVEYXRlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5EYXRlVGltZSkoP0VEYXRlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEF0dGVuZCIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nKSg/QXR0ZW5kKTwvUGFyYW1ldGVyPjxQcm9jTmFtZT5FbXBBdHRlbmRhbmNlUmVwb3J0U3VtbWFyeTwvUHJvY05hbWU+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJFbXBBdHRlbmRhbmNlUmVwb3J0Ij48RmllbGQgTmFtZT0iRW1wbG95ZWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQXR0ZW5kRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkF0dGVuZGFuY2UiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0NEZXNjcmlwdGlvbiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik9mZmljZUluIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik9mZmljZU91dCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48VmlldyBOYW1lPSJFbXBBdHRlbmRhbmNlUmVwb3J0U3VtbWFyeSI+PEZpZWxkIE5hbWU9IkVtcGxveWVlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNDRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0NDb2RlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkJyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCckNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUHJlc2VudHMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJBYnNlbnRzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iTGVhdmVzIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG9saWRheXMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJHYXpldHRlZExlYXZlcyIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48Q29ubmVjdGlvbk9wdGlvbnMgQ2xvc2VDb25uZWN0aW9uPSJ0cnVlIiAvPjwvU3FsRGF0YVNvdXJjZT4=" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v22.2" Ref="1" Content="System.DateTime" Type="System.Type" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

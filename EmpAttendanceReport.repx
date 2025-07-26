@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" RollPaper="true" Margins="99, 99, 100, 100" PaperKind="Custom" PageWidth="1654" PageHeight="3623" Version="22.2" Font="Arial, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" RollPaper="true" Margins="99, 99, 100, 100" PaperKind="Custom" PageWidth="1654" PageHeight="3859" Version="22.2" Font="Arial, 9.75pt">
   <Parameters>
     <Item1 Ref="2" ValueInfo="2025-07-23" Name="SDate" Type="#Ref-1">
       <ExpressionBindings>
@@ -80,19 +80,19 @@
             <Item5 Ref="48" Visible="false" />
           </RowDefinitions>
           <Cells>
-            <Item1 Ref="49" ControlType="XRCrossTabCell" Name="crossTabCell2" ColumnIndex="2" RowIndex="2" TextAlignment="TopCenter" Font="Calibri, 6pt" Padding="6,6,0,0,100" />
-            <Item2 Ref="50" ControlType="XRCrossTabCell" Name="crossTabCell3" TextFormatString="{0:dd-MMM}" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" Font="Calibri, 6pt, style=Bold" Padding="2,2,0,0,100" />
+            <Item1 Ref="49" ControlType="XRCrossTabCell" Name="crossTabCell2" ColumnIndex="2" RowIndex="2" TextAlignment="TopCenter" Font="Calibri, 7pt" Padding="6,6,0,0,100" />
+            <Item2 Ref="50" ControlType="XRCrossTabCell" Name="crossTabCell3" TextFormatString="{0:dd-MMM}" ColumnIndex="2" RowIndex="0" TextAlignment="MiddleCenter" Font="Calibri, 7pt, style=Bold" Padding="2,2,0,0,100" />
             <Item3 Ref="51" ControlType="XRCrossTabCell" Name="crossTabCell4" ColumnIndex="4" RowIndex="0" RowSpan="2" Text="Grand Total" Font="Calibri, 7pt, style=Bold" />
             <Item4 Ref="52" ControlType="XRCrossTabCell" Name="crossTabCell5" ColumnIndex="4" RowIndex="2" Font="Calibri, 9.75pt, style=Bold" />
-            <Item5 Ref="53" ControlType="XRCrossTabCell" Name="crossTabCell6" ColumnIndex="1" RowIndex="2" Font="Calibri, 6pt, style=Bold" />
+            <Item5 Ref="53" ControlType="XRCrossTabCell" Name="crossTabCell6" ColumnIndex="1" RowIndex="2" Font="Calibri, 7pt" />
             <Item6 Ref="54" ControlType="XRCrossTabCell" Name="crossTabCell7" ColumnIndex="0" RowIndex="4" ColumnSpan="2" Text="Grand Total" Font="Calibri, 7pt, style=Bold" />
             <Item7 Ref="55" ControlType="XRCrossTabCell" Name="crossTabCell8" ColumnIndex="2" RowIndex="4" Font="Calibri, 9.75pt, style=Bold" />
             <Item8 Ref="56" ControlType="XRCrossTabCell" Name="crossTabCell9" ColumnIndex="4" RowIndex="4" Font="Calibri, 9.75pt, style=Bold" />
-            <Item9 Ref="57" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="0" RowIndex="2" Font="Calibri, 6pt, style=Bold" BorderColor="Black" BorderWidth="1" />
+            <Item9 Ref="57" ControlType="XRCrossTabCell" Name="crossTabHeaderCell2" ColumnIndex="0" RowIndex="2" Font="Calibri, 7pt" BorderColor="Black" BorderWidth="1" />
             <Item10 Ref="58" ControlType="XRCrossTabCell" Name="crossTabHeaderCell3" TextFormatString="Total {0}" ColumnIndex="0" RowIndex="3" ColumnSpan="2" />
             <Item11 Ref="59" ControlType="XRCrossTabCell" Name="crossTabTotalCell1" ColumnIndex="2" RowIndex="3" />
             <Item12 Ref="60" ControlType="XRCrossTabCell" Name="crossTabTotalCell2" ColumnIndex="4" RowIndex="3" />
-            <Item13 Ref="61" ControlType="XRCrossTabCell" Name="crossTabHeaderCell19" TextFormatString="{0:ddd}" ColumnIndex="2" RowIndex="1" TextAlignment="MiddleCenter" Font="Calibri, 6pt, style=Bold" Padding="2,2,0,0,100" />
+            <Item13 Ref="61" ControlType="XRCrossTabCell" Name="crossTabHeaderCell19" TextFormatString="{0:ddd}" ColumnIndex="2" RowIndex="1" TextAlignment="MiddleCenter" Font="Calibri, 7pt, style=Bold" Padding="2,2,0,0,100" />
             <Item14 Ref="62" ControlType="XRCrossTabCell" Name="crossTabHeaderCell20" TextFormatString="Total {0}" ColumnIndex="3" RowIndex="0" RowSpan="2" />
             <Item15 Ref="63" ControlType="XRCrossTabCell" Name="crossTabTotalCell8" ColumnIndex="3" RowIndex="2" />
             <Item16 Ref="64" ControlType="XRCrossTabCell" Name="crossTabTotalCell9" ColumnIndex="3" RowIndex="3" />
@@ -145,34 +145,34 @@
             <Item9 Ref="99" Visible="false" />
           </RowDefinitions>
           <Cells>
-            <Item1 Ref="100" ControlType="XRCrossTabCell" Name="crossTabCell10" ColumnIndex="1" RowIndex="0" Text="Employee" Font="Calibri, 6pt, style=Bold" />
+            <Item1 Ref="100" ControlType="XRCrossTabCell" Name="crossTabCell10" ColumnIndex="1" RowIndex="0" Text="Employee" Font="Calibri, 9pt, style=Bold" />
             <Item2 Ref="101" ControlType="XRCrossTabCell" Name="crossTabCell11" ColumnIndex="7" RowIndex="1" TextAlignment="TopCenter" Font="Calibri, 6pt" Padding="6,6,0,0,100" />
             <Item3 Ref="102" ControlType="XRCrossTabCell" Name="crossTabCell12" ColumnIndex="7" RowIndex="0" Font="Calibri, 6pt, style=Bold" />
-            <Item4 Ref="103" ControlType="XRCrossTabCell" Name="crossTabCell15" ColumnIndex="1" RowIndex="1" RowSpan="5" Font="Calibri, 6pt, style=Bold" />
+            <Item4 Ref="103" ControlType="XRCrossTabCell" Name="crossTabCell15" ColumnIndex="1" RowIndex="1" RowSpan="5" Font="Calibri, 8pt" />
             <Item5 Ref="104" ControlType="XRCrossTabCell" Name="crossTabCell16" ColumnIndex="0" RowIndex="8" ColumnSpan="7" Text="Grand Total" Font="Calibri, 7pt, style=Bold" />
             <Item6 Ref="105" ControlType="XRCrossTabCell" Name="crossTabCell17" ColumnIndex="7" RowIndex="8" Font="Calibri, 9.75pt, style=Bold" />
             <Item7 Ref="106" ControlType="XRCrossTabCell" Name="crossTabCell19" ColumnIndex="0" RowIndex="0" Font="Calibri, 7pt, style=Bold" />
-            <Item8 Ref="107" ControlType="XRCrossTabCell" Name="crossTabCell20" ColumnIndex="0" RowIndex="1" RowSpan="6" Font="Calibri, 6pt, style=Bold" />
+            <Item8 Ref="107" ControlType="XRCrossTabCell" Name="crossTabCell20" ColumnIndex="0" RowIndex="1" RowSpan="6" Font="Calibri, 8pt" />
             <Item9 Ref="108" ControlType="XRCrossTabCell" Name="crossTabCell21" TextFormatString="Total {0}" ColumnIndex="0" RowIndex="7" ColumnSpan="7" />
             <Item10 Ref="109" ControlType="XRCrossTabCell" Name="crossTabCell22" ColumnIndex="7" RowIndex="7" />
-            <Item11 Ref="110" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="2" RowIndex="0" Text="Presents" Font="Calibri, 7pt, style=Bold" />
-            <Item12 Ref="111" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="2" RowIndex="1" RowSpan="4" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
+            <Item11 Ref="110" ControlType="XRCrossTabCell" Name="crossTabHeaderCell4" ColumnIndex="2" RowIndex="0" Text="Presents" Font="Calibri, 9pt, style=Bold" />
+            <Item12 Ref="111" ControlType="XRCrossTabCell" Name="crossTabHeaderCell5" ColumnIndex="2" RowIndex="1" RowSpan="4" TextAlignment="MiddleRight" Font="Calibri, 8pt" />
             <Item13 Ref="112" ControlType="XRCrossTabCell" Name="crossTabHeaderCell6" TextFormatString="Total {0}" ColumnIndex="1" RowIndex="6" ColumnSpan="6" />
             <Item14 Ref="113" ControlType="XRCrossTabCell" Name="crossTabTotalCell3" ColumnIndex="7" RowIndex="6" />
-            <Item15 Ref="114" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="3" RowIndex="0" Text="Absents" Font="Calibri, 7pt, style=Bold" />
-            <Item16 Ref="115" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="3" RowIndex="1" RowSpan="3" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
+            <Item15 Ref="114" ControlType="XRCrossTabCell" Name="crossTabHeaderCell7" ColumnIndex="3" RowIndex="0" Text="Absents" Font="Calibri, 9pt, style=Bold" />
+            <Item16 Ref="115" ControlType="XRCrossTabCell" Name="crossTabHeaderCell8" ColumnIndex="3" RowIndex="1" RowSpan="3" TextAlignment="MiddleRight" Font="Calibri, 8pt" />
             <Item17 Ref="116" ControlType="XRCrossTabCell" Name="crossTabHeaderCell9" TextFormatString="Total {0}" ColumnIndex="2" RowIndex="5" ColumnSpan="5" />
             <Item18 Ref="117" ControlType="XRCrossTabCell" Name="crossTabTotalCell4" ColumnIndex="7" RowIndex="5" />
-            <Item19 Ref="118" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="4" RowIndex="0" Text="Public Holidays" Font="Calibri, 7pt, style=Bold" />
-            <Item20 Ref="119" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="4" RowIndex="1" RowSpan="2" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
+            <Item19 Ref="118" ControlType="XRCrossTabCell" Name="crossTabHeaderCell10" ColumnIndex="4" RowIndex="0" Text="Public Holidays" Font="Calibri, 9pt, style=Bold" />
+            <Item20 Ref="119" ControlType="XRCrossTabCell" Name="crossTabHeaderCell11" ColumnIndex="4" RowIndex="1" RowSpan="2" TextAlignment="MiddleRight" Font="Calibri, 8pt" />
             <Item21 Ref="120" ControlType="XRCrossTabCell" Name="crossTabHeaderCell12" TextFormatString="Total {0}" ColumnIndex="3" RowIndex="4" ColumnSpan="4" />
             <Item22 Ref="121" ControlType="XRCrossTabCell" Name="crossTabTotalCell5" ColumnIndex="7" RowIndex="4" />
-            <Item23 Ref="122" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="5" RowIndex="0" Text="Leaves" Font="Calibri, 7pt, style=Bold" />
-            <Item24 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="5" RowIndex="1" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
+            <Item23 Ref="122" ControlType="XRCrossTabCell" Name="crossTabHeaderCell13" ColumnIndex="5" RowIndex="0" Text="Leaves" Font="Calibri, 9pt, style=Bold" />
+            <Item24 Ref="123" ControlType="XRCrossTabCell" Name="crossTabHeaderCell14" ColumnIndex="5" RowIndex="1" TextAlignment="MiddleRight" Font="Calibri, 8pt" />
             <Item25 Ref="124" ControlType="XRCrossTabCell" Name="crossTabHeaderCell15" TextFormatString="Total {0}" ColumnIndex="4" RowIndex="3" ColumnSpan="3" />
             <Item26 Ref="125" ControlType="XRCrossTabCell" Name="crossTabTotalCell6" ColumnIndex="7" RowIndex="3" />
-            <Item27 Ref="126" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="6" RowIndex="0" Text="Holidays" Font="Calibri, 7pt, style=Bold" />
-            <Item28 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="6" RowIndex="1" TextAlignment="MiddleRight" Font="Calibri, 7pt, style=Bold" />
+            <Item27 Ref="126" ControlType="XRCrossTabCell" Name="crossTabHeaderCell16" ColumnIndex="6" RowIndex="0" Text="Holidays" Font="Calibri, 9pt, style=Bold" />
+            <Item28 Ref="127" ControlType="XRCrossTabCell" Name="crossTabHeaderCell17" ColumnIndex="6" RowIndex="1" TextAlignment="MiddleRight" Font="Calibri, 8pt" />
             <Item29 Ref="128" ControlType="XRCrossTabCell" Name="crossTabHeaderCell18" TextFormatString="Total {0}" ColumnIndex="5" RowIndex="2" ColumnSpan="2" />
             <Item30 Ref="129" ControlType="XRCrossTabCell" Name="crossTabTotalCell7" ColumnIndex="7" RowIndex="2" />
           </Cells>

@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmployeeInformationReport" Landscape="true" Margins="80, 80, 100, 100" PaperKind="A4" PageWidth="1169" PageHeight="827" Version="22.2" DataMember="EmpInformationReport" DataSource="#Ref-0" Font="Calibri, 9.75pt">
+  <Parameters>
+    <Item1 Ref="3" AllowNull="true" Name="SCCCode" />
+    <Item2 Ref="4" AllowNull="true" Name="ECCCode" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="5" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="6" ControlType="DetailBand" Name="Detail" HeightF="14.583333">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRTable" Name="table1" TextAlignment="MiddleLeft" SizeF="1008.99994,14.583333" LocationFloat="0,0" Font="Calibri, 6pt" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="8" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="9" ControlType="XRTableCell" Name="tableCell1" Weight="1.2941177724695214" Multiline="true" ProcessDuplicatesMode="Suppress" Text="tableCell1">
+                  <ExpressionBindings>
+                    <Item1 Ref="10" EventName="BeforePrint" PropertyName="Text" Expression="[CCDescription]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="11" ControlType="XRTableCell" Name="tableCell2" Weight="1.3638012112244666" CanShrink="true" Multiline="true" Text="tableCell2">
+                  <ExpressionBindings>
+                    <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[Employee]" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="13" ControlType="XRTableCell" Name="tableCell3" Weight="1.7062693552953843" Multiline="true" Text="tableCell3">
+                  <ExpressionBindings>
+                    <Item1 Ref="14" EventName="BeforePrint" PropertyName="Text" Expression="[DesigName]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="15" ControlType="XRTableCell" Name="tableCell4" Weight="0.71273619227026552" Multiline="true" Text="tableCell4">
+                  <ExpressionBindings>
+                    <Item1 Ref="16" EventName="BeforePrint" PropertyName="Text" Expression="[CNICNo]" />
+                  </ExpressionBindings>
+                </Item4>
+                <Item5 Ref="17" ControlType="XRTableCell" Name="tableCell10" Weight="0.69683230794006323" Multiline="true" Text="tableCell10">
+                  <ExpressionBindings>
+                    <Item1 Ref="18" EventName="BeforePrint" PropertyName="Text" Expression="[EmpType]" />
+                  </ExpressionBindings>
+                </Item5>
+                <Item6 Ref="19" ControlType="XRTableCell" Name="tableCell9" Weight="0.3882353569005691" Multiline="true">
+                  <ExpressionBindings>
+                    <Item1 Ref="20" EventName="BeforePrint" PropertyName="Text" Expression="[Gender]" />
+                  </ExpressionBindings>
+                </Item6>
+                <Item7 Ref="21" ControlType="XRTableCell" Name="tableCell5" Weight="0.45251996171380504" TextFormatString="{0:dd-MMM-yy}" Multiline="true">
+                  <ExpressionBindings>
+                    <Item1 Ref="22" EventName="BeforePrint" PropertyName="Text" Expression="[DOB]" />
+                  </ExpressionBindings>
+                </Item7>
+                <Item8 Ref="23" ControlType="XRTableCell" Name="tableCell7" Weight="0.42558725095520827" TextFormatString="{0:dd-MMM-yy}" Multiline="true" Text="tableCell7">
+                  <ExpressionBindings>
+                    <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[JoinDate]" />
+                  </ExpressionBindings>
+                </Item8>
+                <Item9 Ref="25" ControlType="XRTableCell" Name="tableCell8" Weight="0.57528650346527743" TextFormatString="{0:dd-MMM-yy}" Multiline="true" Text="tableCell8">
+                  <ExpressionBindings>
+                    <Item1 Ref="26" EventName="BeforePrint" PropertyName="Text" Expression="[CAddr2]" />
+                  </ExpressionBindings>
+                </Item9>
+                <Item10 Ref="27" ControlType="XRTableCell" Name="tableCell11" Weight="0.38226251718476112" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell11" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[ETotalAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="29" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="30" ControlType="XRTableCell" Name="tableCell12" Weight="0.47782815278804663" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell12" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="[TotalDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="32" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="33" ControlType="XRTableCell" Name="tableCell13" Weight="0.40137567369517141" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell13" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="34" EventName="BeforePrint" PropertyName="Text" Expression="[EGrossPay]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="35" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="36" ControlType="XRTableCell" Name="tableCell23" Weight="0.4304437106561752" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[ENetPay]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="38" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="39" ControlType="XRTableCell" Name="tableCell28" Weight="0.33527537297114179" Multiline="true" TextAlignment="MiddleRight">
+                  <StylePriority Ref="40" UseTextAlignment="false" />
+                </Item14>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="41" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="42" ControlType="BottomMarginBand" Name="BottomMargin" />
+    <Item4 Ref="43" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="61.62499">
+      <Controls>
+        <Item1 Ref="44" ControlType="XRLabel" Name="label2" Multiline="true" Text="Employee Information Report" SizeF="488.541656,23.0000038" LocationFloat="0,38.6249847" Font="Calibri, 14pt, style=Bold" Padding="2,2,0,0,96">
+          <StylePriority Ref="45" UseFont="false" />
+        </Item1>
+        <Item2 Ref="46" ControlType="XRLabel" Name="label1" Multiline="true" Text="[BrName]" TextAlignment="MiddleLeft" SizeF="488.541656,38.6249847" LocationFloat="0,0" Font="Calibri, 20pt, style=Bold" Padding="2,2,0,0,96">
+          <StylePriority Ref="47" UseFont="false" UseTextAlignment="false" />
+        </Item2>
+      </Controls>
+    </Item4>
+    <Item5 Ref="48" ControlType="PageHeaderBand" Name="PageHeader" HeightF="24.5833321">
+      <Controls>
+        <Item1 Ref="49" ControlType="XRTable" Name="table2" TextAlignment="MiddleLeft" SizeF="1009,14.583333" LocationFloat="0,10" Font="Calibri, 7pt, style=Bold" Padding="2,2,0,0,96" Borders="Bottom" BorderWidth="2">
+          <Rows>
+            <Item1 Ref="50" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="51" ControlType="XRTableCell" Name="tableCell14" Weight="1.3541665649414063" Multiline="true" Text="Cost Center/Dept" Font="Calibri, 7pt, style=Bold">
+                  <StylePriority Ref="52" UseFont="false" />
+                </Item1>
+                <Item2 Ref="53" ControlType="XRTableCell" Name="tableCell15" Weight="1.4270834350585939" CanShrink="true" Multiline="true" Text="Employee Name" />
+                <Item3 Ref="54" ControlType="XRTableCell" Name="tableCell16" Weight="1.7854425048828124" Multiline="true" Text="Designation" />
+                <Item4 Ref="55" ControlType="XRTableCell" Name="tableCell17" Weight="0.74580749511718736" Multiline="true" Text="CNIC" />
+                <Item5 Ref="56" ControlType="XRTableCell" Name="tableCell18" Weight="0.72916687011718739" Multiline="true" Text="Employee Type" />
+                <Item6 Ref="57" ControlType="XRTableCell" Name="tableCell19" Weight="0.40624999999999989" Multiline="true" Text="Gender" />
+                <Item7 Ref="58" ControlType="XRTableCell" Name="tableCell20" Weight="0.4735180664062501" Multiline="true" Text="DOB" />
+                <Item8 Ref="59" ControlType="XRTableCell" Name="tableCell24" Weight="0.44533386230468774" Multiline="true" Text="Join Date" />
+                <Item9 Ref="60" ControlType="XRTableCell" Name="tableCell6" Weight="0.60198120117187537" Multiline="true" Text="Address" />
+                <Item10 Ref="61" ControlType="XRTableCell" Name="tableCell25" Weight="0.3999999999999998" Multiline="true" Text="Earnings" TextAlignment="MiddleRight">
+                  <StylePriority Ref="62" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="63" ControlType="XRTableCell" Name="tableCell26" Weight="0.49999999999999989" Multiline="true" Text="Deductions" TextAlignment="MiddleRight">
+                  <StylePriority Ref="64" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="65" ControlType="XRTableCell" Name="tableCell27" Weight="0.43" Multiline="true" Text="Gross Pay" TextAlignment="MiddleRight">
+                  <StylePriority Ref="66" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="67" ControlType="XRTableCell" Name="tableCell21" Weight="0.4404168701171875" Multiline="true" Text="Net Pay" TextAlignment="MiddleRight">
+                  <StylePriority Ref="68" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="69" ControlType="XRTableCell" Name="tableCell22" Weight="0.35083312988281246" Multiline="true" Text="Active" TextAlignment="MiddleRight">
+                  <StylePriority Ref="70" UseTextAlignment="false" />
+                </Item14>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="71" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item5>
+  </Bands>
+  <ParameterPanelLayoutItems>
+    <Item1 Ref="72" LayoutItemType="Parameter" Parameter="#Ref-3" />
+    <Item2 Ref="73" LayoutItemType="Parameter" Parameter="#Ref-4" />
+  </ParameterPanelLayoutItems>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9DTE9VREVSUF9Db25uZWN0aW9uIiBQcm92aWRlcktleT0iTVNTcWxTZXJ2ZXIiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0iREVTS1RPUC0yTU1VS1FNXFNRTEVYUFJFU1MiIC8+PFBhcmFtZXRlciBOYW1lPSJkYXRhYmFzZSIgVmFsdWU9IkNMT1VERVJQIiAvPjxQYXJhbWV0ZXIgTmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiBWYWx1ZT0iVHJ1ZSIgLz48UGFyYW1ldGVyIE5hbWU9InJlYWQgb25seSIgVmFsdWU9IjEiIC8+PFBhcmFtZXRlciBOYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIFZhbHVlPSJmYWxzZSIgLz48L1BhcmFtZXRlcnM+PC9Db25uZWN0aW9uPjxRdWVyeSBUeXBlPSJTdG9yZWRQcm9jUXVlcnkiIE5hbWU9IkVtcEluZm9ybWF0aW9uUmVwb3J0Ij48UGFyYW1ldGVyIE5hbWU9IkBTQ0NDb2RlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9TQ0NDb2RlKTwvUGFyYW1ldGVyPjxQYXJhbWV0ZXIgTmFtZT0iQEVDQ0NvZGUiIFR5cGU9IkRldkV4cHJlc3MuRGF0YUFjY2Vzcy5FeHByZXNzaW9uIj4oU3lzdGVtLlN0cmluZykoP0VDQ0NvZGUpPC9QYXJhbWV0ZXI+PFByb2NOYW1lPkVtcEluZm9ybWF0aW9uUmVwb3J0PC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkVtcEluZm9ybWF0aW9uUmVwb3J0Ij48RmllbGQgTmFtZT0iRW1wbG95ZWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQnJOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRlc2lnTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFbXBUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkFjdGl2ZSIgVHlwZT0iQm9vbGVhbiIgLz48RmllbGQgTmFtZT0iRUdyb3NzUGF5IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJDQ0Rlc2NyaXB0aW9uIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkpvaW5EYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ0FkZHIyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRPQiIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkdlbmRlciIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJDTklDTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRVRvdGFsQWxsb3ciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkVOZXRQYXkiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlRvdGFsRGVkIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>

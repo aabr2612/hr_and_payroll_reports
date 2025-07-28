@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmployeeLeaveApplication" PageWidth="850" PageHeight="1100" Version="22.2" DataMember="Query.Result1" DataSource="#Ref-0" Font="Calibri, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmployeeLeaveApplication" Margins="88, 88, 100, 100" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="22.2" DataMember="Query.Result1" DataSource="#Ref-0" Font="Calibri, 9.75pt">
   <Parameters>
     <Item1 Ref="3" Name="EmpCode" />
   </Parameters>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceSheet" Margins="50, 50, 50, 50" PageWidth="850" PageHeight="1100" Version="22.2" DataMember="Query" DataSource="#Ref-0" Font="Times New Roman, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceSheet" Margins="35, 34, 50, 50" PaperKind="A4" PageWidth="827" PageHeight="1169" Version="22.2" DataMember="Query" DataSource="#Ref-0" Font="Times New Roman, 9.75pt">
   <Parameters>
     <Item1 Ref="3" Description="Enter Starting Cost Center" AllowNull="true" Name="SCCCode" />
     <Item2 Ref="4" Description="Enter Ending Cost Center" AllowNull="true" Name="ECCCode" />
@@ -21,7 +21,7 @@
     <Item1 Ref="14" ControlType="TopMarginBand" Name="TopMargin" HeightF="50" />
     <Item2 Ref="15" ControlType="DetailBand" Name="Detail" HeightF="23">
       <Controls>
-        <Item1 Ref="16" ControlType="XRTable" Name="table2" SizeF="750,23" LocationFloat="0,0" Font="Calibri, 9.75pt">
+        <Item1 Ref="16" ControlType="XRTable" Name="table2" SizeF="758,23" LocationFloat="0,0" Font="Calibri, 9.75pt">
           <Rows>
             <Item1 Ref="17" ControlType="XRTableRow" Name="tableRow2" Weight="1">
               <Cells>
@@ -85,28 +85,28 @@
       </Controls>
     </Item2>
     <Item3 Ref="46" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="50" />
-    <Item4 Ref="47" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="152.083313">
+    <Item4 Ref="47" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="152.083328">
       <Controls>
-        <Item1 Ref="48" ControlType="XRLine" Name="line2" LineWidth="2" SizeF="750,2.08333325" LocationFloat="0,149.999985" />
-        <Item2 Ref="49" ControlType="XRLabel" Name="label5" TextFormatString="{0:MM-ddd-yyy}" Multiline="true" TextAlignment="MiddleCenter" SizeF="750,20" LocationFloat="0,129.999985" Font="Calibri, 9pt, style=Bold">
+        <Item1 Ref="48" ControlType="XRLine" Name="line2" LineWidth="2" SizeF="757.000061,2.08332825" LocationFloat="0,150" />
+        <Item2 Ref="49" ControlType="XRLabel" Name="label5" TextFormatString="{0:MM-ddd-yyy}" Multiline="true" TextAlignment="MiddleCenter" SizeF="757,20" LocationFloat="0,129.999985" Font="Calibri, 9pt, style=Bold">
           <ExpressionBindings>
             <Item1 Ref="50" EventName="BeforePrint" PropertyName="Text" Expression="Iif([Parameters.SortBy] = 'C:E:D',&#xA;    'Sorted By: Cost Center, Employees and Date',&#xA;Iif([Parameters.SortBy] = 'C:D:E',&#xA;    'Sorted By: Cost Center, Date and Employees',&#xA;Iif([Parameters.SortBy] = 'D:E:C',&#xA;    'Sorted By: Date, Employees and Cost Center',&#xA;Iif([Parameters.SortBy] = 'D:C:E',&#xA;    'Sorted By: Date, Cost Center and Employees',&#xA;    'Default'))))&#xA;" />
           </ExpressionBindings>
           <StylePriority Ref="51" UseFont="false" UseTextAlignment="false" />
         </Item2>
-        <Item3 Ref="52" ControlType="XRLabel" Name="label4" TextFormatString="{0:MM-ddd-yyy}" Text="From Date: [?SDate!dd-MM-yy] To [?EDate!dd-MM-yy]" TextAlignment="MiddleCenter" SizeF="750,20" LocationFloat="0,109.999977" Font="Calibri, 9pt, style=Bold">
+        <Item3 Ref="52" ControlType="XRLabel" Name="label4" TextFormatString="{0:MM-ddd-yyy}" Text="From Date: [?SDate!dd-MM-yy] To [?EDate!dd-MM-yy]" TextAlignment="MiddleCenter" SizeF="757,19.9999924" LocationFloat="0,109.999977" Font="Calibri, 9pt, style=Bold">
           <ExpressionBindings>
             <Item1 Ref="53" EventName="BeforePrint" PropertyName="Text" Expression="Iif(Not IsNullOrEmpty([Parameters.SCCCode]) And IsNullOrEmpty([Parameters.ECCCode]),&#xA;    'Cost Center from: ' + [Parameters.SCCCode],&#xA;Iif(IsNullOrEmpty([Parameters.SCCCode]) And Not IsNullOrEmpty([Parameters.ECCCode]),&#xA;    'Cost Center till: ' + [Parameters.ECCCode],&#xA;Iif(Not IsNullOrEmpty([Parameters.SCCCode]) And Not IsNullOrEmpty([Parameters.ECCCode]),&#xA;    'Cost Center from: ' + [Parameters.SCCCode] + ' to ' + [Parameters.ECCCode],&#xA;    'All Cost Centers')))&#xA;" />
           </ExpressionBindings>
           <StylePriority Ref="54" UseFont="false" UseTextAlignment="false" />
         </Item3>
-        <Item4 Ref="55" ControlType="XRLabel" Name="label3" TextFormatString="{0:MM-ddd-yyy}" Text="From Date: [?SDate!dd-MM-yy] To [?EDate!dd-MM-yy]" TextAlignment="MiddleCenter" SizeF="750,20" LocationFloat="0,89.99999" Font="Calibri, 9pt, style=Bold">
+        <Item4 Ref="55" ControlType="XRLabel" Name="label3" TextFormatString="{0:MM-ddd-yyy}" Text="From Date: [?SDate!dd-MM-yy] To [?EDate!dd-MM-yy]" TextAlignment="MiddleCenter" SizeF="757,20" LocationFloat="0,89.99999" Font="Calibri, 9pt, style=Bold">
           <StylePriority Ref="56" UseFont="false" UseTextAlignment="false" />
         </Item4>
-        <Item5 Ref="57" ControlType="XRLabel" Name="label2" Multiline="true" Text="Attendance Sheet" TextAlignment="MiddleCenter" SizeF="750,30" LocationFloat="0,60" Font="Calibri, 15pt, style=Bold" Padding="2,2,0,0,100">
+        <Item5 Ref="57" ControlType="XRLabel" Name="label2" Multiline="true" Text="Attendance Sheet" TextAlignment="MiddleCenter" SizeF="757,30" LocationFloat="0,60.0000076" Font="Calibri, 15pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="58" UseFont="false" UseTextAlignment="false" />
         </Item5>
-        <Item6 Ref="59" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" TextAlignment="MiddleCenter" SizeF="750,60" LocationFloat="0,0" Font="Calibri, 20pt, style=Bold" Padding="2,2,0,0,100">
+        <Item6 Ref="59" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" TextAlignment="MiddleCenter" SizeF="757,60" LocationFloat="0,0" Font="Calibri, 20pt, style=Bold" Padding="2,2,0,0,100">
           <ExpressionBindings>
             <Item1 Ref="60" EventName="BeforePrint" PropertyName="Text" Expression="[BrName]" />
           </ExpressionBindings>
@@ -116,7 +116,7 @@
     </Item4>
     <Item5 Ref="62" ControlType="PageHeaderBand" Name="PageHeader" HeightF="25">
       <Controls>
-        <Item1 Ref="63" ControlType="XRTable" Name="table1" SizeF="750.000061,25" LocationFloat="0,0">
+        <Item1 Ref="63" ControlType="XRTable" Name="table1" SizeF="757.000061,25" LocationFloat="0,0">
           <Rows>
             <Item1 Ref="64" ControlType="XRTableRow" Name="tableRow1" Weight="11.5">
               <Cells>
@@ -158,11 +158,11 @@
         <Item1 Ref="84" ControlType="XRPageInfo" Name="pageInfo2" PageInfo="DateTime" TextAlignment="MiddleLeft" SizeF="245.833328,23" LocationFloat="0,2.083333" Font="Calibri, 8pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="85" UseFont="false" UseTextAlignment="false" />
         </Item1>
-        <Item2 Ref="86" ControlType="XRLabel" Name="label6" Multiline="true" Text="Page Number:" TextAlignment="MiddleLeft" SizeF="80.20831,23" LocationFloat="618.75,2.083333" Font="Calibri, 8pt, style=Bold" Padding="2,2,0,0,100">
+        <Item2 Ref="86" ControlType="XRLabel" Name="label6" Multiline="true" Text="Page Number:" TextAlignment="MiddleLeft" SizeF="80.20831,23" LocationFloat="625.75,2.083333" Font="Calibri, 8pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="87" UseFont="false" UseTextAlignment="false" />
         </Item2>
-        <Item3 Ref="88" ControlType="XRLine" Name="line1" LineWidth="2" SizeF="750,2.08333325" LocationFloat="0,0" />
-        <Item4 Ref="89" ControlType="XRPageInfo" Name="pageInfo1" TextAlignment="MiddleRight" SizeF="51.041687,23" LocationFloat="698.9583,2.083333" Font="Calibri, 8pt, style=Bold" Padding="2,2,0,0,100">
+        <Item3 Ref="88" ControlType="XRLine" Name="line1" LineWidth="2" SizeF="757.000061,2.08333325" LocationFloat="0,0" />
+        <Item4 Ref="89" ControlType="XRPageInfo" Name="pageInfo1" TextAlignment="MiddleRight" SizeF="51.041687,23" LocationFloat="705.9583,2.083333" Font="Calibri, 8pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="90" UseFont="false" UseTextAlignment="false" />
         </Item4>
       </Controls>

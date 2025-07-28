@@ -20,8 +20,8 @@ SELECT CONCAT(EO.EmpCode,' ',EP.EmpName) AS Employee,
 	EL.LeaveReqNo,
 	LT.LTypeDesc,
 	EL.LeaveDate,
-	EL.RemBal,
-	EL.PrevBal,
+	RTRIM(CAST(CAST(EL.RemBal AS FLOAT) AS VARCHAR)) AS RemBal,
+	RTRIM(CAST(CAST(EL.PrevBal AS FLOAT) AS VARCHAR)) AS PrevBal,
 	EL.Status
 
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" RollPaper="true" Margins="99, 99, 100, 100" PaperKind="Custom" PageWidth="1654" PageHeight="3859" Version="22.2" Font="Arial, 9.75pt">
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="0" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmpAttendanceReport" VerticalContentSplitting="Smart" HorizontalContentSplitting="Smart" Landscape="true" Margins="99, 99, 100, 100" PaperKind="A3" PageWidth="1654" PageHeight="1169" Version="22.2" Font="Arial, 9.75pt">
   <Parameters>
     <Item1 Ref="2" ValueInfo="2025-07-23" Name="SDate" Type="#Ref-1">
       <ExpressionBindings>

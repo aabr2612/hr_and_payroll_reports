@@ -16,10 +16,13 @@ SELECT CONCAT(EO.EmpCode,' ',EP.EmpName) AS Employee,
 	HRD.DesigName,
 	EL.FromDate,
 	EL.ToDate,
-	EL.DaysNo,
+	RTRIM(CAST(CAST(EL.DaysNo AS FLOAT) AS VARCHAR)) AS DaysNo,
 	EL.LeaveReqNo,
 	LT.LTypeDesc,
-	EL.LeaveDate
+	EL.LeaveDate,
+	EL.RemBal,
+	EL.PrevBal,
+	EL.Status
 
 
 FROM EmpOfficeInfo AS EO 

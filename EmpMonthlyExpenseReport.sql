@@ -27,11 +27,15 @@ BEGIN
     SELECT 
         GLB.BrName, 
         CONCAT(EO.EmpCode, '' '', EP.EmpName) AS Employee, 
-        ES.' + QUOTENAME(@FieldName) + ' AS Value
+        ES.' + QUOTENAME(@FieldName) + ' AS Value,
+		CONCAT(GLCC.CCCode,'' '',GLCC.CCDescription) AS CostCenter,
+		HRD.DesigName
     FROM EmpOfficeInfo AS EO
     JOIN EmpPersonalInfo AS EP ON EO.EmpCode = EP.EmpCode
     JOIN EmpSalary AS ES ON EO.EmpCode = ES.EmpCode
     JOIN GLBranch AS GLB ON EO.BrCode = GLB.BrCode
+	JOIN GLCostCenter AS GLCC ON EO.CCCode = GLCC.CCCode
+	JOIN HRDesignations AS HRD ON EO.DesigCode = HRD.DesigCode
     WHERE
         (
             (EO.CCCode BETWEEN @SEmpCode AND @EEmpCode) OR
@@ -40,7 +44,7 @@ BEGIN
             (@SEmpCode IS NULL AND @EEmpCode IS NULL)
         )
         AND ES.SalSDate BETWEEN @SDate AND @EDate
-	ORDER BY EO.EmpCode ASC;
+	ORDER BY GLCC.CCCode ASC, EO.EmpCode ASC;
     ';
 
     EXEC sp_executesql 

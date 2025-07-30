@@ -10,7 +10,7 @@ CREATE PROCEDURE [EmpLeaveSummaryAndLatestDetail]
 AS
 BEGIN
     SET NOCOUNT ON;
-    SELECT 
+    SELECT
         ELE.Allowed,
         ELE.Balance,
         ELE.Availed,
@@ -20,21 +20,21 @@ BEGIN
         ELT.LatestLeaveDate,
         ELT.LatestDaysNo
     FROM EmpLeaveEnt AS ELE
-    JOIN LeaveTypes AS LT
+        JOIN LeaveTypes AS LT
         ON ELE.LTypeCode = LT.LTypeCode
-    JOIN GLFiscalYear AS GLFY
+        JOIN GLFiscalYear AS GLFY
         ON ELE.FYCode = GLFY.FYCode
     OUTER APPLY (
-        SELECT TOP 1 
+        SELECT TOP 1
             EL.LeaveDate AS LatestLeaveDate,
             RTRIM(CAST(CAST(EL.DaysNo AS FLOAT) AS VARCHAR)) AS LatestDaysNo
         FROM EmpLeaves AS EL
         WHERE EL.LeaveCode = ELE.LTypeCode
-          AND EL.EmpCode = ELE.EmpCode
+            AND EL.EmpCode = ELE.EmpCode
         ORDER BY EL.LeaveDate DESC
     ) AS ELT
-    WHERE ELE.EmpCode = @EmpCode 
-      AND YEAR(GLFY.FYStartDate) = YEAR(GETDATE());
+    WHERE ELE.EmpCode = @EmpCode
+        AND YEAR(GLFY.FYStartDate) = YEAR(GETDATE());
 
     SELECT TOP 1
         EO.EmpCode,
@@ -51,17 +51,17 @@ BEGIN
         EL.AdminRemarks,
         LT.LTypeDesc
     FROM dbo.EmpOfficeInfo AS EO
-    INNER JOIN dbo.EmpPersonalInfo AS EP
+        INNER JOIN dbo.EmpPersonalInfo AS EP
         ON EP.EmpCode = EO.EmpCode
-    INNER JOIN dbo.GLBranch AS GLB
+        INNER JOIN dbo.GLBranch AS GLB
         ON GLB.BrCode = EO.BrCode
-    INNER JOIN dbo.HRDesignations AS HRD
+        INNER JOIN dbo.HRDesignations AS HRD
         ON HRD.DesigCode = EO.DesigCode
-    INNER JOIN dbo.GLCostCenter AS GLCC
+        INNER JOIN dbo.GLCostCenter AS GLCC
         ON GLCC.CCCode = EO.CCCode
-    INNER JOIN dbo.EmpLeaves AS EL
+        INNER JOIN dbo.EmpLeaves AS EL
         ON EL.EmpCode = EO.EmpCode
-    INNER JOIN dbo.LeaveTypes AS LT
+        INNER JOIN dbo.LeaveTypes AS LT
         ON LT.LTypeCode = EL.LeaveCode
     WHERE 
         EO.EmpCode = @EmpCode

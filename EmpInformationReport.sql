@@ -13,7 +13,7 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    SELECT 
+    SELECT
         CONCAT(EO.EmpCode, ' ', EP.EmpName) AS Employee,
         GLB.BrName,
         HRD.DesigName,
@@ -31,12 +31,12 @@ BEGIN
         ES.ENetPay,
         ES.TotalDed
     FROM EmpOfficeInfo AS EO
-    JOIN EmpPersonalInfo AS EP ON EO.EmpCode = EP.EmpCode
-    JOIN EmpSalary AS ES ON EO.EmpCode = ES.EmpCode
-    JOIN GLBranch AS GLB ON EO.BrCode = GLB.BrCode
-    JOIN GLCostCenter AS GLCC ON EO.CCCode = GLCC.CCCode
-    JOIN HRDesignations AS HRD ON EO.DesigCode = HRD.DesigCode
-    JOIN HRShifts AS HRS ON EO.ShiftCode = HRS.ShiftCode
+        JOIN EmpPersonalInfo AS EP ON EO.EmpCode = EP.EmpCode
+        JOIN EmpSalary AS ES ON EO.EmpCode = ES.EmpCode
+        JOIN GLBranch AS GLB ON EO.BrCode = GLB.BrCode
+        JOIN GLCostCenter AS GLCC ON EO.CCCode = GLCC.CCCode
+        JOIN HRDesignations AS HRD ON EO.DesigCode = HRD.DesigCode
+        JOIN HRShifts AS HRS ON EO.ShiftCode = HRS.ShiftCode
     WHERE (
         (@SCCCode IS NULL AND @ECCCode IS NULL)
         OR (@SCCCode IS NOT NULL AND @ECCCode IS NULL AND GLCC.CCCode >= @SCCCode)

@@ -6,20 +6,20 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE PROCEDURE [dbo].[EmpSalaryListing]
-@SCCCode VARCHAR(50),
-@ECCCode VARCHAR(50)
+	@SCCCode VARCHAR(50),
+	@ECCCode VARCHAR(50)
 
 AS
 BEGIN
-SET NOCOUNT ON;
-SELECT CONCAT(EO.EmpCode, ' ', EP.EmpName) AS Employee,
-        GLB.BrName,
-        HRD.DesigName,
-        CONCAT(GLCC.CCCode, ' ', GLCC.CCDescription) AS CCDescription,
-        ES.EGrossPay,
-        ES.ETotalAllow,
-        ES.ENetPay,
-        ES.TotalDed,
+	SET NOCOUNT ON;
+	SELECT CONCAT(EO.EmpCode, ' ', EP.EmpName) AS Employee,
+		GLB.BrName,
+		HRD.DesigName,
+		CONCAT(GLCC.CCCode, ' ', GLCC.CCDescription) AS CCDescription,
+		ES.EGrossPay,
+		ES.ETotalAllow,
+		ES.ENetPay,
+		ES.TotalDed,
 		ES.EBasicPay,
 		ES.EarrearsAllow,
 		ES.EConvAllow,
@@ -42,25 +42,25 @@ SELECT CONCAT(EO.EmpCode, ' ', EP.EmpName) AS Employee,
 		ES.ProfTaxDed,
 		ES.TaxDed
 
-FROM EmpOfficeInfo AS EO 
-JOIN EmpPersonalInfo AS EP 
-ON EO.EmpCode = EP.EmpCode 
-JOIN EmpSalary AS ES
-ON EO.EmpCode = ES.EmpCode
-JOIN GLBranch AS GLB 
-ON EO.BrCode = GLB.BrCode 
-JOIN GLCostCenter AS GLCC 
-ON EO.CCCode = GLCC.CCCode 
-JOIN HRDesignations AS HRD 
-ON EO.DesigCode = HRD.DesigCode
+	FROM EmpOfficeInfo AS EO
+		JOIN EmpPersonalInfo AS EP
+		ON EO.EmpCode = EP.EmpCode
+		JOIN EmpSalary AS ES
+		ON EO.EmpCode = ES.EmpCode
+		JOIN GLBranch AS GLB
+		ON EO.BrCode = GLB.BrCode
+		JOIN GLCostCenter AS GLCC
+		ON EO.CCCode = GLCC.CCCode
+		JOIN HRDesignations AS HRD
+		ON EO.DesigCode = HRD.DesigCode
 
-WHERE (
+	WHERE (
         (@SCCCode IS NULL AND @ECCCode IS NULL)
-        OR (@SCCCode IS NOT NULL AND @ECCCode IS NULL AND GLCC.CCCode >= @SCCCode)
-        OR (@SCCCode IS NULL AND @ECCCode IS NOT NULL AND GLCC.CCCode <= @ECCCode)
-        OR (@SCCCode IS NOT NULL AND @ECCCode IS NOT NULL AND GLCC.CCCode BETWEEN @SCCCode AND @ECCCode)
+		OR (@SCCCode IS NOT NULL AND @ECCCode IS NULL AND GLCC.CCCode >= @SCCCode)
+		OR (@SCCCode IS NULL AND @ECCCode IS NOT NULL AND GLCC.CCCode <= @ECCCode)
+		OR (@SCCCode IS NOT NULL AND @ECCCode IS NOT NULL AND GLCC.CCCode BETWEEN @SCCCode AND @ECCCode)
     )
-    ORDER BY 
+	ORDER BY 
         GLCC.CCCode ASC,
         EO.EmpCode ASC;
 

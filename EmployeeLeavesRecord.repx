@@ -158,12 +158,12 @@
         <Item1 Ref="83" ControlType="XRLine" Name="line1" LineWidth="2" SizeF="1069,4.66667938" LocationFloat="0,22.9999866" BorderWidth="1">
           <StylePriority Ref="84" UseBorderWidth="false" />
         </Item1>
-        <Item2 Ref="85" ControlType="XRLabel" Name="label5" Multiline="true" Text="[DaysNo]" TextAlignment="MiddleRight" SizeF="21.57727,23" LocationFloat="941.6332,0" Font="Calibri, 9pt" Padding="2,2,0,0,100">
+        <Item2 Ref="85" ControlType="XRLabel" Name="label5" Multiline="true" Text="[DaysNo]" TextAlignment="MiddleLeft" SizeF="21.57727,23" LocationFloat="941.6332,0" Font="Calibri, 9pt" Padding="6,2,0,0,100">
           <Summary Ref="86" Running="Group" />
           <ExpressionBindings>
             <Item1 Ref="87" EventName="BeforePrint" PropertyName="Text" Expression="sumCount([LeaveReqNo])" />
           </ExpressionBindings>
-          <StylePriority Ref="88" UseFont="false" UseTextAlignment="false" />
+          <StylePriority Ref="88" UseFont="false" UsePadding="false" UseTextAlignment="false" />
         </Item2>
         <Item3 Ref="89" ControlType="XRLabel" Name="label6" Multiline="true" Text="Total Leave Applications:" TextAlignment="MiddleRight" SizeF="132.650391,23" LocationFloat="808.9828,0" Font="Calibri, 9pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="90" UseFont="false" UseTextAlignment="false" />
@@ -171,12 +171,12 @@
         <Item4 Ref="91" ControlType="XRLabel" Name="label4" Multiline="true" Text="Total Days:" TextAlignment="MiddleRight" SizeF="68.75,23" LocationFloat="963.210449,0" Font="Calibri, 9pt, style=Bold" Padding="2,2,0,0,100">
           <StylePriority Ref="92" UseFont="false" UseTextAlignment="false" />
         </Item4>
-        <Item5 Ref="93" ControlType="XRLabel" Name="label3" Multiline="true" Text="[DaysNo]" TextAlignment="MiddleRight" SizeF="37.03961,23" LocationFloat="1031.96045,0" Font="Calibri, 9pt" Padding="2,2,0,0,100">
+        <Item5 Ref="93" ControlType="XRLabel" Name="label3" Multiline="true" Text="[DaysNo]" TextAlignment="MiddleLeft" SizeF="37.03961,23" LocationFloat="1031.96045,0" Font="Calibri, 9pt" Padding="6,2,0,0,100">
           <Summary Ref="94" Running="Group" />
           <ExpressionBindings>
             <Item1 Ref="95" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([DaysNo])" />
           </ExpressionBindings>
-          <StylePriority Ref="96" UseFont="false" UseTextAlignment="false" />
+          <StylePriority Ref="96" UseFont="false" UsePadding="false" UseTextAlignment="false" />
         </Item5>
       </Controls>
     </Item7>

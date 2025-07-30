@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="22.2.3.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="EmployeeSalaryReport" Margins="50, 50, 100, 100" PaperKind="A3Rotated" PageWidth="1654" PageHeight="1169" Version="22.2" DataMember="EmpSalaryListing" DataSource="#Ref-0" Font="Calibri, 9.75pt">
+  <Parameters>
+    <Item1 Ref="3" AllowNull="true" Name="SCCCode" />
+    <Item2 Ref="4" AllowNull="true" Name="ECCCode" />
+  </Parameters>
+  <Bands>
+    <Item1 Ref="5" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="6" ControlType="DetailBand" Name="Detail" HeightF="14.583333">
+      <Controls>
+        <Item1 Ref="7" ControlType="XRTable" Name="table1" TextAlignment="MiddleLeft" SizeF="1554,14.583333" LocationFloat="0,0" Font="Calibri, 6pt" Padding="2,2,0,0,96">
+          <Rows>
+            <Item1 Ref="8" ControlType="XRTableRow" Name="tableRow1" Weight="1">
+              <Cells>
+                <Item1 Ref="9" ControlType="XRTableCell" Name="tableCell1" Weight="1.2490601811327753" Multiline="true" ProcessDuplicatesMode="Suppress" Text="tableCell1">
+                  <ExpressionBindings>
+                    <Item1 Ref="10" EventName="BeforePrint" PropertyName="Text" Expression="[CCDescription]" />
+                  </ExpressionBindings>
+                </Item1>
+                <Item2 Ref="11" ControlType="XRTableCell" Name="tableCell2" Weight="1.2936695433159884" CanShrink="true" Multiline="true" Text="tableCell2">
+                  <ExpressionBindings>
+                    <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[Employee]" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="13" ControlType="XRTableCell" Name="tableCell3" Weight="1.6059345223058297" Multiline="true" Text="tableCell3">
+                  <ExpressionBindings>
+                    <Item1 Ref="14" EventName="BeforePrint" PropertyName="Text" Expression="[DesigName]" />
+                  </ExpressionBindings>
+                </Item3>
+                <Item4 Ref="15" ControlType="XRTableCell" Name="tableCell4" Weight="0.35687433276827524" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell4" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="16" EventName="BeforePrint" PropertyName="Text" Expression="[EarrearsAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="17" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="18" ControlType="XRTableCell" Name="tableCell10" Weight="0.44766665990431681" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell10" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="19" EventName="BeforePrint" PropertyName="Text" Expression="[EBasicPay]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="20" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="21" ControlType="XRTableCell" Name="tableCell9" Weight="0.60209533453423936" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="22" EventName="BeforePrint" PropertyName="Text" Expression="[EConvAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="23" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="24" ControlType="XRTableCell" Name="tableCell5" Weight="0.38206951395554911" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="25" EventName="BeforePrint" PropertyName="Text" Expression="[EEOBIAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="26" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="27" ControlType="XRTableCell" Name="tableCell7" Weight="0.49526401808163689" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell7" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[EFixedAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="29" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="30" ControlType="XRTableCell" Name="tableCell8" Weight="0.26664676627811368" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell8" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="31" EventName="BeforePrint" PropertyName="Text" Expression="[EfoodAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="32" UseTextAlignment="false" />
+                </Item9>
+                <Item10 Ref="33" ControlType="XRTableCell" Name="tableCell11" Weight="0.48181053366197579" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell11" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="34" EventName="BeforePrint" PropertyName="Text" Expression="[EHRAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="35" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="36" ControlType="XRTableCell" Name="tableCell12" Weight="0.382261395306948" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell12" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="37" EventName="BeforePrint" PropertyName="Text" Expression="[EInternetAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="38" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="39" ControlType="XRTableCell" Name="tableCell13" Weight="0.426859379706737" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell13" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="40" EventName="BeforePrint" PropertyName="Text" Expression="[EMedAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="41" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="42" ControlType="XRTableCell" Name="tableCell23" Weight="0.33129400726456021" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="43" EventName="BeforePrint" PropertyName="Text" Expression="[EMobileAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="44" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="45" ControlType="XRTableCell" Name="tableCell28" Weight="0.24572684011711576" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="46" EventName="BeforePrint" PropertyName="Text" Expression="[EPESSIAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="47" UseTextAlignment="false" />
+                </Item14>
+                <Item15 Ref="48" ControlType="XRTableCell" Name="tableCell30" Weight="0.27657761652803592" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="49" EventName="BeforePrint" PropertyName="Text" Expression="[EPetrolAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="50" UseTextAlignment="false" />
+                </Item15>
+                <Item16 Ref="51" ControlType="XRTableCell" Name="tableCell32" Weight="0.26765576162811733" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="52" EventName="BeforePrint" PropertyName="Text" Expression="[EOtherAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="53" UseTextAlignment="false" />
+                </Item16>
+                <Item17 Ref="54" ControlType="XRTableCell" Name="tableCell34" Weight="0.35209669892368334" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="55" EventName="BeforePrint" PropertyName="Text" Expression="[EutilityAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="56" UseTextAlignment="false" />
+                </Item17>
+                <Item18 Ref="57" ControlType="XRTableCell" Name="tableCell36" Weight="0.49452546306086925" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="58" EventName="BeforePrint" PropertyName="Text" Expression="[ETotalAllow]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="59" UseTextAlignment="false" />
+                </Item18>
+                <Item19 Ref="60" ControlType="XRTableCell" Name="tableCell56" Weight="0.37534493603377345" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="61" EventName="BeforePrint" PropertyName="Text" Expression="[AdvDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="62" UseTextAlignment="false" />
+                </Item19>
+                <Item20 Ref="63" ControlType="XRTableCell" Name="tableCell38" Weight="0.41491553480063703" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="64" EventName="BeforePrint" PropertyName="Text" Expression="[EOBIDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="65" UseTextAlignment="false" />
+                </Item20>
+                <Item21 Ref="66" ControlType="XRTableCell" Name="tableCell40" Weight="0.41491553480063703" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="67" EventName="BeforePrint" PropertyName="Text" Expression="[LoanInstDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="68" UseTextAlignment="false" />
+                </Item21>
+                <Item22 Ref="69" ControlType="XRTableCell" Name="tableCell42" Weight="0.41491553480063703" TextFormatString="{0:#,#}" Multiline="true" Text="[OverpayDed]" TextAlignment="MiddleRight">
+                  <StylePriority Ref="70" UseTextAlignment="false" />
+                </Item22>
+                <Item23 Ref="71" ControlType="XRTableCell" Name="tableCell44" Weight="0.30541166903767791" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="72" EventName="BeforePrint" PropertyName="Text" Expression="[PFundDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="73" UseTextAlignment="false" />
+                </Item23>
+                <Item24 Ref="74" ControlType="XRTableCell" Name="tableCell46" Weight="0.33447683151485008" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="75" EventName="BeforePrint" PropertyName="Text" Expression="[TaxDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="76" UseTextAlignment="false" />
+                </Item24>
+                <Item25 Ref="77" ControlType="XRTableCell" Name="tableCell48" Weight="0.37429779365288496" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="78" EventName="BeforePrint" PropertyName="Text" Expression="[ProfTaxDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="79" UseTextAlignment="false" />
+                </Item25>
+                <Item26 Ref="80" ControlType="XRTableCell" Name="tableCell50" Weight="0.4240672861982191" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="81" EventName="BeforePrint" PropertyName="Text" Expression="[TotalDed]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="82" UseTextAlignment="false" />
+                </Item26>
+                <Item27 Ref="83" ControlType="XRTableCell" Name="tableCell52" Weight="0.4240672861982191" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="84" EventName="BeforePrint" PropertyName="Text" Expression="[EGrossPay]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="85" UseTextAlignment="false" />
+                </Item27>
+                <Item28 Ref="86" ControlType="XRTableCell" Name="tableCell54" Weight="0.4240672861982191" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <ExpressionBindings>
+                    <Item1 Ref="87" EventName="BeforePrint" PropertyName="Text" Expression="[ENetPay]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="88" UseTextAlignment="false" />
+                </Item28>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="89" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item2>
+    <Item3 Ref="90" ControlType="BottomMarginBand" Name="BottomMargin" />
+    <Item4 Ref="91" ControlType="ReportHeaderBand" Name="ReportHeader" HeightF="61.62499">
+      <Controls>
+        <Item1 Ref="92" ControlType="XRLabel" Name="label1" Multiline="true" Text="[BrName]" TextAlignment="MiddleLeft" SizeF="488.541656,38.6249847" LocationFloat="0,0" Font="Calibri, 20pt, style=Bold" Padding="2,2,0,0,100">
+          <ExpressionBindings>
+            <Item1 Ref="93" EventName="BeforePrint" PropertyName="Text" Expression="[BrName]" />
+          </ExpressionBindings>
+          <StylePriority Ref="94" UseFont="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="95" ControlType="XRLabel" Name="label2" Multiline="true" Text="Employee Salary Structure Listing" SizeF="488.541656,23.0000038" LocationFloat="0,38.6249847" Font="Calibri, 14pt, style=Bold" Padding="2,2,0,0,100">
+          <StylePriority Ref="96" UseFont="false" />
+        </Item2>
+      </Controls>
+    </Item4>
+    <Item5 Ref="97" ControlType="PageHeaderBand" Name="PageHeader" HeightF="24.58337">
+      <Controls>
+        <Item1 Ref="98" ControlType="XRTable" Name="table2" TextAlignment="MiddleLeft" SizeF="1554,14.5833321" LocationFloat="0,10.0000381" Font="Calibri, 7.5pt, style=Bold" Padding="2,2,0,0,96" Borders="Bottom" BorderWidth="2">
+          <Rows>
+            <Item1 Ref="99" ControlType="XRTableRow" Name="tableRow2" Weight="1">
+              <Cells>
+                <Item1 Ref="100" ControlType="XRTableCell" Name="tableCell14" Weight="1.3070190679398481" Multiline="true" Text="Cost Center/Dept" Font="Calibri, 7pt, style=Bold" Padding="2,2,0,0,100">
+                  <StylePriority Ref="101" UseFont="false" UsePadding="false" />
+                </Item1>
+                <Item2 Ref="102" ControlType="XRTableCell" Name="tableCell15" Weight="1.3536982922969607" CanShrink="true" Multiline="true" Text="Employee Name" Padding="2,2,0,0,100">
+                  <StylePriority Ref="103" UsePadding="false" />
+                </Item2>
+                <Item3 Ref="104" ControlType="XRTableCell" Name="tableCell16" Weight="1.680453019507872" Multiline="true" Text="Designation" Padding="2,2,0,0,100">
+                  <StylePriority Ref="105" UsePadding="false" />
+                </Item3>
+                <Item4 Ref="106" ControlType="XRTableCell" Name="tableCell17" Weight="0.37343401221995781" Multiline="true" Text="Arrears" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="107" UsePadding="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="108" ControlType="XRTableCell" Name="tableCell18" Weight="0.46843928689800429" Multiline="true" Text="Basic Pay" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="109" UsePadding="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="110" ControlType="XRTableCell" Name="tableCell19" Weight="0.6300336931030589" Multiline="true" Text="Conveyance" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="111" UsePadding="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="112" ControlType="XRTableCell" Name="tableCell20" Weight="0.39979842891586054" Multiline="true" Text="EOBI" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="113" UsePadding="false" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="114" ControlType="XRTableCell" Name="tableCell24" Weight="0.51824582097557848" Multiline="true" Text="Fixed Allow" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="115" UsePadding="false" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="116" ControlType="XRTableCell" Name="tableCell6" Weight="0.27901907850077345" Multiline="true" Text="Food" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="117" UsePadding="false" UseTextAlignment="false" />
+                </Item9>
+                <Item10 Ref="118" ControlType="XRTableCell" Name="tableCell25" Weight="0.50416747912175164" Multiline="true" Text="Home Rent" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="119" UsePadding="false" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="120" ControlType="XRTableCell" Name="tableCell26" Weight="0.39999969549771769" Multiline="true" Text="Internet" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="121" UsePadding="false" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="122" ControlType="XRTableCell" Name="tableCell27" Weight="0.44666648814233634" Multiline="true" Text="Medical" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="123" UsePadding="false" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="124" ControlType="XRTableCell" Name="tableCell21" Weight="0.34666671786604653" Multiline="true" Text="Mobile" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="125" UsePadding="false" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="126" ControlType="XRTableCell" Name="tableCell22" Weight="0.25712964120263693" Multiline="true" Text="PESSI" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="127" UsePadding="false" UseTextAlignment="false" />
+                </Item14>
+                <Item15 Ref="128" ControlType="XRTableCell" Name="tableCell29" Weight="0.28941135742550816" Multiline="true" Text="Petrol" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="129" UsePadding="false" UseTextAlignment="false" />
+                </Item15>
+                <Item16 Ref="130" ControlType="XRTableCell" Name="tableCell31" Weight="0.28007551034244388" Multiline="true" Text="Other" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="131" UsePadding="false" UseTextAlignment="false" />
+                </Item16>
+                <Item17 Ref="132" ControlType="XRTableCell" Name="tableCell33" Weight="0.36843617121444444" Multiline="true" Text="Utility" TextAlignment="MiddleLeft" Padding="2,2,0,0,100">
+                  <StylePriority Ref="133" UsePadding="false" UseTextAlignment="false" />
+                </Item17>
+                <Item18 Ref="134" ControlType="XRTableCell" Name="tableCell35" Weight="0.51747118986743645" Multiline="true" Text="Total Allow" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="135" UseTextAlignment="false" />
+                </Item18>
+                <Item19 Ref="136" ControlType="XRTableCell" Name="tableCell55" Weight="0.39275558118832643" Multiline="true" Text="Advance" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="137" UseTextAlignment="false" />
+                </Item19>
+                <Item20 Ref="138" ControlType="XRTableCell" Name="tableCell37" Weight="0.43416686600125048" Multiline="true" Text="EOBI Ded" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="139" UseTextAlignment="false" />
+                </Item20>
+                <Item21 Ref="140" ControlType="XRTableCell" Name="tableCell39" Weight="0.43416686600125048" Multiline="true" Text="Loan Inst." TextAlignment="MiddleLeft">
+                  <StylePriority Ref="141" UseTextAlignment="false" />
+                </Item21>
+                <Item22 Ref="142" ControlType="XRTableCell" Name="tableCell41" Weight="0.43416686600125048" Multiline="true" Text="OverPay" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="143" UseTextAlignment="false" />
+                </Item22>
+                <Item23 Ref="144" ControlType="XRTableCell" Name="tableCell43" Weight="0.31958312592352711" Multiline="true" Text="PFund" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="145" UseTextAlignment="false" />
+                </Item23>
+                <Item24 Ref="146" ControlType="XRTableCell" Name="tableCell45" Weight="0.34999816645142495" Multiline="true" Text="TaxDed" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="147" UseTextAlignment="false" />
+                </Item24>
+                <Item25 Ref="148" ControlType="XRTableCell" Name="tableCell47" Weight="0.39166442211903368" Multiline="true" Text="Prof. Tax" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="149" UseTextAlignment="false" />
+                </Item25>
+                <Item26 Ref="150" ControlType="XRTableCell" Name="tableCell49" Weight="0.44374816952747886" Multiline="true" Text="Total Ded" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="151" UseTextAlignment="false" />
+                </Item26>
+                <Item27 Ref="152" ControlType="XRTableCell" Name="tableCell51" Weight="0.44374816952747886" Multiline="true" Text="GrossPay" TextAlignment="MiddleLeft">
+                  <StylePriority Ref="153" UseTextAlignment="false" />
+                </Item27>
+                <Item28 Ref="154" ControlType="XRTableCell" Name="tableCell53" Weight="0.44374816952747886" Multiline="true" Text="Net Pay" TextAlignment="MiddleRight">
+                  <StylePriority Ref="155" UseTextAlignment="false" />
+                </Item28>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="156" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item5>
+    <Item6 Ref="157" ControlType="ReportFooterBand" Name="ReportFooter" HeightF="17.9583225">
+      <Controls>
+        <Item1 Ref="158" ControlType="XRTable" Name="table3" TextAlignment="MiddleLeft" SizeF="1554,17.9583225" LocationFloat="0,0" Font="Calibri, 6pt, style=Bold" Padding="2,2,0,0,96" Borders="Top" BorderWidth="1">
+          <Rows>
+            <Item1 Ref="159" ControlType="XRTableRow" Name="tableRow3" Weight="1">
+              <Cells>
+                <Item1 Ref="160" ControlType="XRTableCell" Name="tableCell57" Weight="1.3638012112244666" Multiline="true" Text="Total Employees:" TextAlignment="MiddleRight" Font="Calibri, 8pt, style=Bold">
+                  <StylePriority Ref="161" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="162" ControlType="XRTableCell" Name="tableCell58" Weight="1.307474802428968" CanShrink="true" Multiline="true">
+                  <Summary Ref="163" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="164" EventName="BeforePrint" PropertyName="Text" Expression="sumCount([Employee])" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="165" ControlType="XRTableCell" Name="tableCell59" Weight="1.4982398841146332" Multiline="true" Text="Grand Total:" TextAlignment="MiddleRight" Font="Calibri, 8pt, style=Bold">
+                  <StylePriority Ref="166" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="167" ControlType="XRTableCell" Name="tableCell60" Weight="0.35866827580285193" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell4" TextAlignment="MiddleRight">
+                  <Summary Ref="168" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="169" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EarrearsAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="170" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="171" ControlType="XRTableCell" Name="tableCell61" Weight="0.44991500842056731" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell10" TextAlignment="MiddleRight">
+                  <Summary Ref="172" Running="Report" />
+                  <ExpressionBindings>
+                    <Item1 Ref="173" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EBasicPay])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="174" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="175" ControlType="XRTableCell" Name="tableCell62" Weight="0.60512253906641555" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="176" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="177" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EConvAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="178" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="179" ControlType="XRTableCell" Name="tableCell63" Weight="0.38398986605719537" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="180" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="181" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EEOBIAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="182" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="183" ControlType="XRTableCell" Name="tableCell64" Weight="0.49775319794217038" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell7" TextAlignment="MiddleRight">
+                  <Summary Ref="184" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="185" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EFixedAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="186" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="187" ControlType="XRTableCell" Name="tableCell65" Weight="0.26798693641583488" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="188" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="189" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EfoodAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="190" UseTextAlignment="false" />
+                </Item9>
+                <Item10 Ref="191" ControlType="XRTableCell" Name="tableCell66" Weight="0.48423211826391938" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="192" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="193" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EHRAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="194" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="195" ControlType="XRTableCell" Name="tableCell67" Weight="0.38418206577519853" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="196" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="197" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EInternetAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="198" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="199" ControlType="XRTableCell" Name="tableCell68" Weight="0.42900592216265521" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="200" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="201" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EMedAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="202" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="203" ControlType="XRTableCell" Name="tableCell69" Weight="0.33295851765874945" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="204" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="205" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EMobileAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="206" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="207" ControlType="XRTableCell" Name="tableCell70" Weight="0.24696185191988085" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="208" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="209" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EPESSIAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="210" UseTextAlignment="false" />
+                </Item14>
+                <Item15 Ref="211" ControlType="XRTableCell" Name="tableCell71" Weight="0.30486780077267628" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="212" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="213" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EPetrolAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="214" UseTextAlignment="false" />
+                </Item15>
+                <Item16 Ref="215" ControlType="XRTableCell" Name="tableCell72" Weight="0.24210088900220877" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="216" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="217" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EOtherAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="218" UseTextAlignment="false" />
+                </Item16>
+                <Item17 Ref="219" ControlType="XRTableCell" Name="tableCell73" Weight="0.35386720169744484" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="220" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="221" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EutilityAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="222" UseTextAlignment="false" />
+                </Item17>
+                <Item18 Ref="223" ControlType="XRTableCell" Name="tableCell74" Weight="0.49701212043744236" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="224" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="225" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ETotalAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="226" UseTextAlignment="false" />
+                </Item18>
+                <Item19 Ref="227" ControlType="XRTableCell" Name="tableCell75" Weight="0.37722557577830523" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="228" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="229" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([AdvDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="230" UseTextAlignment="false" />
+                </Item19>
+                <Item20 Ref="231" ControlType="XRTableCell" Name="tableCell76" Weight="0.41700155592037591" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="232" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="233" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EOBIDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="234" UseTextAlignment="false" />
+                </Item20>
+                <Item21 Ref="235" ControlType="XRTableCell" Name="tableCell77" Weight="0.41699804637747456" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="236" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="237" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([LoanInstDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="238" UseTextAlignment="false" />
+                </Item21>
+                <Item22 Ref="239" ControlType="XRTableCell" Name="tableCell78" Weight="0.41699802809860531" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="240" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="241" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([OverpayDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="242" UseTextAlignment="false" />
+                </Item22>
+                <Item23 Ref="243" ControlType="XRTableCell" Name="tableCell79" Weight="0.3069457962573075" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="244" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="245" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([PFundDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="246" UseTextAlignment="false" />
+                </Item23>
+                <Item24 Ref="247" ControlType="XRTableCell" Name="tableCell80" Weight="0.33616155833846073" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="248" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="249" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TaxDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="250" UseTextAlignment="false" />
+                </Item24>
+                <Item25 Ref="251" ControlType="XRTableCell" Name="tableCell81" Weight="0.37617620337536484" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="252" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="253" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ProfTaxDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="254" UseTextAlignment="false" />
+                </Item25>
+                <Item26 Ref="255" ControlType="XRTableCell" Name="tableCell82" Weight="0.42620240436083856" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="256" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="257" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="258" UseTextAlignment="false" />
+                </Item26>
+                <Item27 Ref="259" ControlType="XRTableCell" Name="tableCell83" Weight="0.42833503659723626" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="260" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="261" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EGrossPay])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="262" UseTextAlignment="false" />
+                </Item27>
+                <Item28 Ref="263" ControlType="XRTableCell" Name="tableCell84" Weight="0.4240672861982191" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight">
+                  <Summary Ref="264" Running="Report" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="265" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ENetPay])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="266" UseTextAlignment="false" />
+                </Item28>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="267" UseFont="false" UseBorders="false" UseBorderWidth="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item6>
+    <Item7 Ref="268" ControlType="GroupHeaderBand" Name="GroupHeader1" HeightF="0">
+      <GroupFields>
+        <Item1 Ref="269" FieldName="CCDescription" />
+      </GroupFields>
+    </Item7>
+    <Item8 Ref="270" ControlType="GroupFooterBand" Name="GroupFooter1" HeightF="14.583333">
+      <Controls>
+        <Item1 Ref="271" ControlType="XRTable" Name="table4" TextAlignment="MiddleLeft" SizeF="1554,14.583333" LocationFloat="0,0" Font="Calibri, 6.5pt, style=Bold" Padding="2,2,0,0,96" Borders="None">
+          <Rows>
+            <Item1 Ref="272" ControlType="XRTableRow" Name="tableRow4" Weight="1">
+              <Cells>
+                <Item1 Ref="273" ControlType="XRTableCell" Name="tableCell85" Weight="2.5555093908336808" Multiline="true" Text="Cost Center Employees:" TextAlignment="MiddleRight">
+                  <StylePriority Ref="274" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="275" ControlType="XRTableCell" Name="tableCell86" Weight="0.58519743231269894" CanShrink="true" Multiline="true">
+                  <Summary Ref="276" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="277" EventName="BeforePrint" PropertyName="Text" Expression="sumCount([Employee])" />
+                  </ExpressionBindings>
+                </Item2>
+                <Item3 Ref="278" ControlType="XRTableCell" Name="tableCell87" Weight="1.0288086641587395" Multiline="true" Text="Cost Center Total:" TextAlignment="MiddleRight">
+                  <StylePriority Ref="279" UseTextAlignment="false" />
+                </Item3>
+                <Item4 Ref="280" ControlType="XRTableCell" Name="tableCell88" Weight="0.35866800216088612" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell4" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="281" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="282" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EarrearsAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="283" UseFont="false" UseTextAlignment="false" />
+                </Item4>
+                <Item5 Ref="284" ControlType="XRTableCell" Name="tableCell89" Weight="0.44991589775695617" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell10" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="285" Running="Group" />
+                  <ExpressionBindings>
+                    <Item1 Ref="286" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EBasicPay])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="287" UseFont="false" UseTextAlignment="false" />
+                </Item5>
+                <Item6 Ref="288" ControlType="XRTableCell" Name="tableCell90" Weight="0.60512192337199244" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="289" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="290" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EConvAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="291" UseFont="false" UseTextAlignment="false" />
+                </Item6>
+                <Item7 Ref="292" ControlType="XRTableCell" Name="tableCell91" Weight="0.38399027652014406" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="293" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="294" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EEOBIAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="295" UseFont="false" UseTextAlignment="false" />
+                </Item7>
+                <Item8 Ref="296" ControlType="XRTableCell" Name="tableCell92" Weight="0.49775319794217038" TextFormatString="{0:#,#}" Multiline="true" Text="tableCell7" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="297" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="298" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EFixedAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="299" UseFont="false" UseTextAlignment="false" />
+                </Item8>
+                <Item9 Ref="300" ControlType="XRTableCell" Name="tableCell93" Weight="0.26798693641583488" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="301" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="302" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EfoodAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="303" UseFont="false" UseTextAlignment="false" />
+                </Item9>
+                <Item10 Ref="304" ControlType="XRTableCell" Name="tableCell94" Weight="0.48423211826391938" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="305" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="306" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EHRAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="307" UseFont="false" UseTextAlignment="false" />
+                </Item10>
+                <Item11 Ref="308" ControlType="XRTableCell" Name="tableCell95" Weight="0.38418206577519853" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="309" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="310" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EInternetAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="311" UseFont="false" UseTextAlignment="false" />
+                </Item11>
+                <Item12 Ref="312" ControlType="XRTableCell" Name="tableCell96" Weight="0.42900592216265521" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="313" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="314" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EMedAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="315" UseFont="false" UseTextAlignment="false" />
+                </Item12>
+                <Item13 Ref="316" ControlType="XRTableCell" Name="tableCell97" Weight="0.33295851765874945" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="317" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="318" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EMobileAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="319" UseFont="false" UseTextAlignment="false" />
+                </Item13>
+                <Item14 Ref="320" ControlType="XRTableCell" Name="tableCell98" Weight="0.24696185191988085" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="321" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="322" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EPESSIAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="323" UseFont="false" UseTextAlignment="false" />
+                </Item14>
+                <Item15 Ref="324" ControlType="XRTableCell" Name="tableCell99" Weight="0.27796770096482787" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="325" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="326" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EPetrolAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="327" UseFont="false" UseTextAlignment="false" />
+                </Item15>
+                <Item16 Ref="328" ControlType="XRTableCell" Name="tableCell100" Weight="0.26900098881005718" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="329" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="330" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EOtherAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="331" UseFont="false" UseTextAlignment="false" />
+                </Item16>
+                <Item17 Ref="332" ControlType="XRTableCell" Name="tableCell101" Weight="0.35386720169744484" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="333" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="334" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EutilityAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="335" UseFont="false" UseTextAlignment="false" />
+                </Item17>
+                <Item18 Ref="336" ControlType="XRTableCell" Name="tableCell102" Weight="0.49701212043744236" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="337" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="338" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ETotalAllow])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="339" UseFont="false" UseTextAlignment="false" />
+                </Item18>
+                <Item19 Ref="340" ControlType="XRTableCell" Name="tableCell103" Weight="0.37722557577830523" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="341" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="342" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([AdvDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="343" UseFont="false" UseTextAlignment="false" />
+                </Item19>
+                <Item20 Ref="344" ControlType="XRTableCell" Name="tableCell104" Weight="0.41700155592037591" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="345" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="346" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([EOBIDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="347" UseFont="false" UseTextAlignment="false" />
+                </Item20>
+                <Item21 Ref="348" ControlType="XRTableCell" Name="tableCell105" Weight="0.41699804637747456" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="349" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="350" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([LoanInstDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="351" UseFont="false" UseTextAlignment="false" />
+                </Item21>
+                <Item22 Ref="352" ControlType="XRTableCell" Name="tableCell106" Weight="0.41699802809860531" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="353" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="354" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([OverpayDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="355" UseFont="false" UseTextAlignment="false" />
+                </Item22>
+                <Item23 Ref="356" ControlType="XRTableCell" Name="tableCell107" Weight="0.3069457962573075" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="357" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="358" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([PFundDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="359" UseFont="false" UseTextAlignment="false" />
+                </Item23>
+                <Item24 Ref="360" ControlType="XRTableCell" Name="tableCell108" Weight="0.33616155833846073" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="361" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="362" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TaxDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="363" UseFont="false" UseTextAlignment="false" />
+                </Item24>
+                <Item25 Ref="364" ControlType="XRTableCell" Name="tableCell109" Weight="0.37617620337536484" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="365" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="366" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ProfTaxDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="367" UseFont="false" UseTextAlignment="false" />
+                </Item25>
+                <Item26 Ref="368" ControlType="XRTableCell" Name="tableCell110" Weight="0.42620240436083856" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="369" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="370" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([TotalDed])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="371" UseFont="false" UseTextAlignment="false" />
+                </Item26>
+                <Item27 Ref="372" ControlType="XRTableCell" Name="tableCell111" Weight="0.42833503659723626" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="373" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="374" EventName="BeforePrint" PropertyName="Text" Expression="[EGrossPay]" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="375" UseFont="false" UseTextAlignment="false" />
+                </Item27>
+                <Item28 Ref="376" ControlType="XRTableCell" Name="tableCell112" Weight="0.4240672861982191" TextFormatString="{0:#,#}" Multiline="true" TextAlignment="MiddleRight" Font="Calibri, 6.5pt">
+                  <Summary Ref="377" Running="Group" IgnoreNullValues="true" />
+                  <ExpressionBindings>
+                    <Item1 Ref="378" EventName="BeforePrint" PropertyName="Text" Expression="sumSum([ENetPay])" />
+                  </ExpressionBindings>
+                  <StylePriority Ref="379" UseFont="false" UseTextAlignment="false" />
+                </Item28>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="380" UseFont="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item8>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v22.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9DTE9VREVSUF9Db25uZWN0aW9uIiBQcm92aWRlcktleT0iTVNTcWxTZXJ2ZXIiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0ic2VydmVyIiBWYWx1ZT0iREVTS1RPUC0yTU1VS1FNXFNRTEVYUFJFU1MiIC8+PFBhcmFtZXRlciBOYW1lPSJkYXRhYmFzZSIgVmFsdWU9IkNMT1VERVJQIiAvPjxQYXJhbWV0ZXIgTmFtZT0idXNlSW50ZWdyYXRlZFNlY3VyaXR5IiBWYWx1ZT0iVHJ1ZSIgLz48UGFyYW1ldGVyIE5hbWU9InJlYWQgb25seSIgVmFsdWU9IjEiIC8+PFBhcmFtZXRlciBOYW1lPSJnZW5lcmF0ZUNvbm5lY3Rpb25IZWxwZXIiIFZhbHVlPSJmYWxzZSIgLz48UGFyYW1ldGVyIE5hbWU9InVzZXJpZCIgVmFsdWU9IiIgLz48UGFyYW1ldGVyIE5hbWU9InBhc3N3b3JkIiBWYWx1ZT0iIiAvPjwvUGFyYW1ldGVycz48L0Nvbm5lY3Rpb24+PFF1ZXJ5IFR5cGU9IlN0b3JlZFByb2NRdWVyeSIgTmFtZT0iRW1wU2FsYXJ5TGlzdGluZyI+PFBhcmFtZXRlciBOYW1lPSJAU0NDQ29kZSIgVHlwZT0iRGV2RXhwcmVzcy5EYXRhQWNjZXNzLkV4cHJlc3Npb24iPihTeXN0ZW0uU3RyaW5nKSg/U0NDQ29kZSk8L1BhcmFtZXRlcj48UGFyYW1ldGVyIE5hbWU9IkBFQ0NDb2RlIiBUeXBlPSJEZXZFeHByZXNzLkRhdGFBY2Nlc3MuRXhwcmVzc2lvbiI+KFN5c3RlbS5TdHJpbmcpKD9FQ0NDb2RlKTwvUGFyYW1ldGVyPjxQcm9jTmFtZT5FbXBTYWxhcnlMaXN0aW5nPC9Qcm9jTmFtZT48L1F1ZXJ5PjxSZXN1bHRTY2hlbWE+PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IkVtcFNhbGFyeUxpc3RpbmciPjxGaWVsZCBOYW1lPSJFbXBsb3llZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVzaWdOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNDRGVzY3JpcHRpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRUdyb3NzUGF5IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJFVG90YWxBbGxvdyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRU5ldFBheSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVG90YWxEZWQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkVCYXNpY1BheSIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRWFycmVhcnNBbGxvdyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRUNvbnZBbGxvdyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRUVPQklBbGxvdyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRUZpeGVkQWxsb3ciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkVmb29kQWxsb3ciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkVIUkFsbG93IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJFSW50ZXJuZXRBbGxvdyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRU1lZEFsbG93IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJFTW9iaWxlQWxsb3ciIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkVPQklEZWQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkVPdGhlckFsbG93IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJFUEVTU0lBbGxvdyIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iRVBldHJvbEFsbG93IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJFdXRpbGl0eUFsbG93IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJBZHZEZWQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IkxvYW5JbnN0RGVkIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJPdmVycGF5RGVkIiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJQRnVuZERlZCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iUHJvZlRheERlZCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iVGF4RGVkIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
